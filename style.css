@@ -1,0 +1,403 @@
+/*
+Theme Name:     Twenty Eleven Child with Sidebar Support
+Theme URI:      http://futurewebblog.com/add-sidebar-support-posts-twenty-eleven-theme/
+Description:    Child theme for the Twenty Eleven which includes support for sidebars on posts
+Author:         Chris Aprea
+Template:       twentyeleven
+Version:        1.1
+*/
+
+/* We must first include the original css from the parent theme */
+@import url("../twentyeleven/style.css");
+
+/* Additions by Dale du Preez */
+/* Start overridden styles */
+p {
+	margin-bottom: 0.75em;
+}
+#page {
+	max-width: 1100px;
+	background-color: #023272;
+	margin-top: 0px;
+}
+#branding {
+	border-top: none;
+}
+#main {
+	padding-top: 0px;
+	background-color: #023272;
+}
+#access {
+	background: #002252;
+	border-bottom: 2px solid white;	
+	margin-bottom: 0px;
+	padding-top: 2px;
+	font-style: italic;
+	box-shadow: 0 12px 12px rgba(0, 0, 0, 0.4);
+}
+#access a {
+	font-weight: 600;
+	padding: 0px 1em;
+}
+#access div,
+#branding .only-search + #access div {
+	padding-right: 0px;
+}
+#access .current-menu-item > a,
+#access .current-menu-ancestor > a,
+#access .current_page_item > a,
+#access .current_page_ancestor > a {
+	font-weight: 800;
+}
+#branding .only-search #s {
+	background-color: #CCC;
+	border-color: #000;
+	color: #222;
+	display: none;
+}
+#branding .only-search #s:focus {
+	background-color: #FFF;
+}
+#searchform #s {
+	background-color: #CCC;
+	margin: 0px;
+	border-radius: 3px;
+}
+#searchform #s:focus {
+	background-color: #FFF;
+}
+body, input, textarea {
+	color: white;
+	font: 300 13px/1.625 Verdana,Arial,Sans-serif;
+}
+.entry-title,
+.entry-title a {
+	color: white;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 1.2em;
+}
+.entry-meta {
+	color: #CCC;
+}
+header .entry-meta .sep,
+.entry-meta .by-author {
+	display: none;
+}
+.entry-meta .entry-date {
+	font-size: 1em;
+}
+.entry-content, .entry-summary {
+    padding-top: 0.5em;
+}
+
+.page-title {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+aside.widget {
+	/*border: 1px solid white;
+	border-radius: 5px;*/
+	margin-bottom: 0.75em;
+}
+aside.widget_search {
+	padding-left: 0px;
+	text-align: center;
+	margin: 0px;
+}
+.widget-title {
+	font-weight: 700;
+	/*font-style: italic;*/
+	font-size: 1.2em;
+	color: white;
+	padding-left: 5px;
+	text-transform: none;
+	letter-spacing: normal;
+	line-height: inherit;
+	background-color: #555;
+	/*border-top-left-radius: 5px;
+	border-top-right-radius: 5px;*/
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	cursor: pointer;
+}
+.widget a {
+	color: white;
+}
+.widget-title:active, .widget-title:hover, .widget-title:focus {
+	color: red;
+}
+
+.widget ul li {
+	list-style: none;
+	padding-left: 10px;
+}
+.widget.closed > .widget-title {
+	/*border-radius: 5px;*/
+}
+.widget ul {
+	visibility: visible;
+	/*-moz-transition-delay: 0s;*/
+	border-bottom: 1px solid #999;
+}
+.widget.closed ul {
+	visibility: hidden;
+	height: 0px;
+}
+.widget ul ul {
+	border-width: 0px;
+}
+.widget a:hover, .widget a:focus, .widget a:active {
+    text-decoration: none;
+}
+.hentry, .no-results, .post {
+	padding: 10px;
+}
+/*Styles for areas that have grey background*/
+.hentry, .no-results, .post, #secondary,
+#respond, .nocomments,
+.nav-previous a, .nav-next a {
+	/* Fallback for web browsers that don't support RGBa */
+	background-color: #333333;
+	/* RGBa with 0.6 opacity */
+	background-color: rgba(51, 51, 51, 0.8);
+	border: 1px solid #999;
+	border-right-color: #666;
+	border-radius: 5px;
+	margin-top: 1em;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-shadow: 0 0 4px #000000;
+}
+#nav-below .nav-previous, #nav-below .nav-next {
+	padding-top: 15px;
+}
+#nav-below a:focus, #nav-below a:active, #nav-below a:hover,
+#nav-above a:focus, #nav-above a:active, #nav-above a:hover {
+	color: red;
+	text-decoration: none;
+}
+.nav-previous a, .nav-next a{
+	padding: 5px;
+}
+#reply-title {
+	color: #AAA;
+}
+#respond .form-submit {
+	float: none;
+}
+#respond input#submit {
+	color: #555;
+	background-color: #EEE;
+	text-shadow: none;
+}
+.nocomments {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #FFF;
+}
+#content {
+	margin-left: 15%;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+#content nav {
+	padding-bottom: 0px;
+}
+#nav-below div a, #nav-above div a {
+	color: white;
+	font-size: 1.1em;
+}
+#primary {
+	background-color: #023272;
+	background-image: url("http://mysticrugby.com/mystic_test/images/backgrounds/main_bg2.gif");
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	background-position: top left;
+}
+#secondary {
+	margin-right: 4%;
+	margin-top: 24px;
+}
+.entry-header .comments-link {
+	display: none;
+}
+.entry-header .comments-link a {
+	/*background: url	("images/comment-bubble.png") no-repeat scroll 0 0 #CCC;
+	color: #999999;*/
+	margin-right: 10px;
+	top: 0.75em;
+}
+.entry-header .comments-link a:hover, .entry-header .comments-link a:focus, .entry-header .comments-link a:active {
+/*    background-color: white;
+    color: rgba(51, 51, 51, 0.8);*/
+}
+
+#site-generator {
+	color: white;
+	background-color: #002252;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	line-height: 2em;
+}
+#site-generator a {
+	color: white;
+}
+#site-generator a:hover, #site-generator a:active, #site-generator a:focus {
+	color: red;
+	text-decoration: none;
+}
+
+/* End overridden styles */
+#content.team_data {
+	width: 70%;
+}
+
+#mystic-schedule {
+	/*background-color: rgba(51, 51, 51, 1.0);*/
+	padding: 0px;
+	background-image: -moz-linear-gradient(right, #555555 0%, #333333 50%);
+	background-image: -o-linear-gradient(right, #555555 0%, #33333 50%);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #555555), color-stop(0.5, #333333));
+	background-image: -webkit-linear-gradient(right, #555555 0%, #333333 50%);
+	background-image: linear-gradient(to left, #555555 0%, #333333 50%);
+	box-shadow: 0 0 12px #000000;
+}
+#mystic-schedule .entry-content {
+	padding: 0px;
+}
+.team_data_schedule {
+	border-radius: 5px;
+}
+.team_data_schedule tbody td,
+.team_data_schedule th {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.team_data_schedule tbody td.team_data_home_result {
+	padding-right: 0px;
+	text-align: right;
+}
+.team_data_schedule tbody td.team_data_away_result {
+	padding-left: 0px;
+	text-align: left;
+}
+.team_data_schedule tbody td.team_data_middle_col {
+	padding: 0px;
+}
+table.team_data_schedule tbody td {
+	border-top: 1px solid #666;
+	vertical-align: middle;
+	line-height: 1.2em;
+}
+.team_data_table_header th {
+	background-color: #023272;
+	color: white;
+	font-weight: bold;
+}
+table.team_data_schedule tbody td.team_data_month_cell {
+	text-transform: uppercase;
+	background-color: #023272;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 10px;
+}
+table.team_data_schedule tr td:first-child {
+    border-left: 0 solid gray;
+}
+table.team_data_schedule tr:first-child th:first-child {
+    border-left: 0 solid gray;
+    border-top-left-radius: 5px;
+}
+table.team_data_schedule tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+table.team_data_schedule tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+table.team_data_schedule tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+table.team_data_schedule tr:hover {
+	background-color: #CCC;
+	color: #333333;
+}
+
+.team_data_level {
+	text-align: center;
+}
+.team_data_home {
+	text-align: right;
+}
+.team_data_result {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+table.standings tbody tr th,
+table.standings tbody tr td {
+	text-align: center;
+}
+table.standings tbody tr td {
+	padding-left: 10px;
+}
+table.standings tr td.leftCell {
+	text-align: left;
+}
+table.standings tr.headerRow {
+	background-color: #666;
+	font-weight: bold;
+}
+table.standings tr.altRow {
+	/*background-color: #EEE;*/
+}
+table.standings tr.mysticRow td {
+	font-weight: bold;
+}
+
+.entry-content th, .comment-content th {
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+#access ul ul a {
+	background: #002252;
+	border-bottom: 1px dotted #ddd;
+	color: white;
+	font-weight: 800;
+}
+#access ul ul li:first-child a:first-child {
+	border-top: 2px solid white;
+}
+#access li > a,
+#access a {
+	/*
+	border: 1px solid #002252;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom: 0px solid #002252;
+	*/
+}
+#access li:hover > a,
+#access ul ul :hover > a,
+#access a:focus {
+	background: #002252;
+}
+#access li:hover > a,
+#access a:focus {
+	border-color: white;
+	color: red;
+}
+#access ul li:hover > ul {
+	display: block;
+}
+
+a:hover, a:focus, a:active,
+article .entry-title a:hover, article .entry-title a:focus, article .entry-title a:active {
+	color: red;
+}
