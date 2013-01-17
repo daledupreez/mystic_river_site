@@ -57,6 +57,14 @@
 	 */
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
+		
+	echo '<!-- is_page_template = ' . is_page_template('template-schedule.php') . '-->';
+	echo '<!-- directory = ' . get_stylesheet_directory_uri() . '-->';
+	if ( is_page_template('template-schedule.php') ) {
+		wp_enqueue_script('jquery');
+		// Note: get_stylesheet_directory_uri() is needed to get the child theme path
+		wp_enqueue_script('schedule', get_stylesheet_directory_uri() . '/js/schedule.js', array('jquery') );
+	}
 
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which
