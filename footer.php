@@ -28,8 +28,6 @@
 				<a href="<?php echo esc_url( get_bloginfo('rss2_url') ); ?>" title="View RSS Feed for News">News RSS</a>
 				<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 				<a href="<?php echo esc_url( get_bloginfo('comments_rss2_url') ); ?>" title="View RSS Feed for Comments">Comments RSS</a>
-				<span><br/></span>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
