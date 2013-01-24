@@ -58,12 +58,15 @@
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 		
-	echo '<!-- is_page_template = ' . is_page_template('template-schedule.php') . '-->';
-	echo '<!-- directory = ' . get_stylesheet_directory_uri() . '-->';
 	if ( is_page_template('template-schedule.php') ) {
-		wp_enqueue_script('jquery');
 		// Note: get_stylesheet_directory_uri() is needed to get the child theme path
-		wp_enqueue_script('schedule', get_stylesheet_directory_uri() . '/js/schedule.js', array('jquery') );
+		wp_enqueue_style( 'mystic-schedule', get_stylesheet_directory_uri() . '/css/schedule.css' );
+		wp_enqueue_style( 'select2', get_stylesheet_directory_uri() . '/select2/select2.css' );
+		wp_enqueue_script( 'jquery' );
+		// Note: get_stylesheet_directory_uri() is needed to get the child theme path
+		wp_enqueue_script( 'mystic-schedule', get_stylesheet_directory_uri() . '/js/schedule.js', array( 'jquery' ) );
+		wp_enqueue_script( 'select2', get_stylesheet_directory_uri() . '/select2/select2.js', array( 'jquery' ) );
+		wp_localize_script( 'mystic-schedule', 'schedule_ajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 	}
 
 	/* Always have wp_head() just before the closing </head>
