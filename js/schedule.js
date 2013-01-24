@@ -101,7 +101,7 @@ schedule.fn.render = function schedule_fn_render()
 				if (theirs > ours) {
 					result = 'L';
 				}
-				else if (theirs == 'ours') {
+				else if (theirs == ours) {
 					result = 'D';
 				}
 				html.push('<td class="mystic_result mystic_result_letter">' + result + '</td>');
