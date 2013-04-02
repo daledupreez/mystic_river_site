@@ -61,11 +61,9 @@
 	if ( is_page_template('template-schedule.php') ) {
 		// Note: get_stylesheet_directory_uri() is needed to get the child theme path
 		wp_enqueue_style( 'mystic-schedule', get_stylesheet_directory_uri() . '/css/schedule.css' );
-		wp_enqueue_style( 'select2', get_stylesheet_directory_uri() . '/select2/select2.css' );
 		wp_enqueue_script( 'jquery' );
 		// Note: get_stylesheet_directory_uri() is needed to get the child theme path
 		wp_enqueue_script( 'mystic-schedule', get_stylesheet_directory_uri() . '/js/schedule.js', array( 'jquery' ) );
-		wp_enqueue_script( 'select2', get_stylesheet_directory_uri() . '/select2/select2.js', array( 'jquery' ) );
 		wp_localize_script( 'mystic-schedule', 'schedule_ajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 	}
 
