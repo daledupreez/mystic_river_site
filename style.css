@@ -138,12 +138,12 @@ aside.widget_search {
 	/*border-radius: 5px;*/
 }
 .widget ul {
-	visibility: visible;
-	/*-moz-transition-delay: 0s;*/
 	border-bottom: 1px solid #999;
+	max-height: 300px;
+	overflow-y: auto;
 }
 .widget.closed ul {
-	visibility: hidden;
+	display: none;
 	height: 0px;
 }
 .widget ul ul {
@@ -318,4 +318,44 @@ table.standings tr.mysticRow td {
 a:hover, a:focus, a:active,
 article .entry-title a:hover, article .entry-title a:focus, article .entry-title a:active {
 	color: red;
+}
+
+/* Match Widget Styles */
+
+.match_widget {
+	text-align: center;
+}
+.widget.closed div.match_widget {
+	display: none;
+}
+
+.match_widget_date,
+.match_widget_result {
+	font-weight: bold;
+}
+
+.match_widget_team {
+	float: left;
+}
+
+.match_widget_score {
+	float: right;
+}
+
+.match_widget_pair {
+	clear: both;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.match_widget_more_info {
+	clear: both;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.match_widget_vs,
+.match_widget_venue {
+	clear: both;
+	text-align: center;
 }
