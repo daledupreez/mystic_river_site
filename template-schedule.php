@@ -41,7 +41,7 @@ get_header(); ?>
 		<div style="text-align: center;">
 			<div class="mystic_schedule_filter">
 				<label for="mystic_season">Season:</label>
-				<select id="mystic_season">
+				<select id="mystic_season" class="mystic_select">
 <?php
 				echo '<option value=""' . ($current_season_val == '' ? ' selected="selected"' : '') . '>All</option>' . "\n";
 				foreach($seasons as $season) {
@@ -53,7 +53,7 @@ get_header(); ?>
 			</div>
 			<div class="mystic_schedule_filter">
 				<label for="mystic_level">Team:</label>
-				<select id="mystic_level">
+				<select id="mystic_level" class="mystic_select">
 				<option value="" selected="selected">All</option>
 <?php
 				foreach($levels as $level) {

@@ -121,3 +121,9 @@ table.mystic_schedule tr.mystic_season_row:hover {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
+.mystic_select {
+	padding: 3px;
+	border: 1px solid #666;
+	border-radius: 4px;
+}
