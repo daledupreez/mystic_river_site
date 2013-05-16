@@ -20,7 +20,7 @@ schedule.fn.getLoc = function schedule_fn_getLoc(text)
 schedule.fn.render = function schedule_fn_render()
 {
 	var articles = [];
-	
+
 	if ((!schedule.matchList) || (schedule.matchList.length == 0)) {
 		var article = document.createElement('article');
 		article.className = 'hentry mystic_schedule';
@@ -36,7 +36,7 @@ schedule.fn.render = function schedule_fn_render()
 		var colCount = 11;
 		var resultColCount = 4;
 		var isOpen = false;
-		
+
 		var last = {
 			"season": null,
 			"year": null,
@@ -118,7 +118,7 @@ schedule.fn.render = function schedule_fn_render()
 			}
 			html.push('</tr>');
 		}
-		
+
 		if (isOpen) {
 			html.push('</table>');
 			html.push('</div>');
