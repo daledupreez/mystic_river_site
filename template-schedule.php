@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Schedule
+Template Name: Schedule Template
 */
 
 /**
