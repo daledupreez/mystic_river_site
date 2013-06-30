@@ -7,7 +7,7 @@ Template:       twentyeleven
 Version:        0.1
 */
 
-/* We must first include the original css from the parent theme */
+/* We must first include the original CSS from the parent theme */
 @import url("../twentyeleven/style.css");
 
 /* Additions by Dale du Preez */
@@ -319,6 +319,16 @@ a:hover, a:focus, a:active,
 article .entry-title a:hover, article .entry-title a:focus, article .entry-title a:active {
 	color: red;
 }
+.error404 .widgettitle {
+	color: #BBB;
+}
+.entry-content h1, .entry-content h2, .comment-content h1, .comment-content h2 {
+	color: #BBB;
+}
+.error404 #main #searchform {
+	background: none;
+	border-width: 0px;
+}
 
 /* Match Widget Styles */
 
@@ -358,4 +368,48 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 .match_widget_venue {
 	clear: both;
 	text-align: center;
+}
+
+/* Join form styles */
+.mystic_hint {
+	font-size: 0.75em;
+}
+.mystic_register_pair {
+	padding-left: 20px;
+	padding-top: 5px;
+}
+.mystic_register_pair label {
+	display: inline-block;
+	min-width: 100px;
+}
+.mystic_register_pair label.mystic_register_required {
+	font-weight: bold;
+}
+.mystic_register_pair input[type="text"],
+.mystic_register_pair textarea {
+	color: #333;
+	background-color: #CCC;
+	border-radius: 5px;
+}
+.mystic_register_email_pair {
+	display: inline-block;
+}
+.mystic_register_right,
+.mystic_register_left {
+	display: inline-block;
+}
+.mystic_register_email_lists {
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+.mystic_register_email_pair {
+	padding-right: 15px;
+}
+.mystic_register_submit {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.mystic_register_button {
+	color: #333;
 }
