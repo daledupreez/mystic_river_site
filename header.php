@@ -66,6 +66,13 @@
 		wp_enqueue_script( 'mystic-schedule', get_stylesheet_directory_uri() . '/js/schedule.js', array( 'jquery' ) );
 		wp_localize_script( 'mystic-schedule', 'schedule_ajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 	}
+	if ( is_page_template('template-register.php') ) {
+		wp_enqueue_style( 'wp-jquery-ui-dialog' );
+		wp_enqueue_script( 'jquery' );
+		wp_enqueue_script( 'jquery-ui-core' );
+		wp_enqueue_script( 'jquery-ui-dialog' );
+
+	}
 
 	/* Always have wp_head() just before the closing </head>
 	 * tag of your theme, or you will break many plugins, which

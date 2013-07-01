@@ -104,6 +104,7 @@ $fields = array(
 						<h1 class="entry-title">Join</h1>
 					</header>
 					<div class="entry-content">
+						<div id="mystic_alert_div" style="display: none;"></div>
 						<form id="mystic_register_form" action="<?php echo esc_url(get_home_url()); ?>">
 <?php
 	echo '<div class="mystic_register_email_lists">';
@@ -169,8 +170,7 @@ if (typeof window.mystic_register_member != 'function') {
 			if (field) {
 				var value = field.value;
 				if ((requiredFields[fieldName] != null) && (value == '')) {
-					alert(requiredFields[fieldName] + ' is required');
-					field.focus();
+					mystic_alert('<strong>' + requiredFields[fieldName] + '</strong> is required.','A required value is missing', function() { if (field) field.focus(); } );
 					return;
 				}
 				postData[fieldName] = value;
@@ -190,18 +190,38 @@ if (typeof window.mystic_register_member != 'function') {
 	window.mystic_register_member_handler = function(response) {
 		if (!response) return;
 		if (response.result == 'error') {
-			var msg = 'There was an error processing your registration.';
+			var msg = 'There was an error processing your registration.<br/>';
 			if (typeof response.error_message == 'string') {
-				msg += '\nThe system reported the following error:\n' + response.error_message;
+				msg += '<span class="mystic_alert_error">' + response.error_message + '</span>';
 			}
-			msg += '\nPlease contact us at info@mysticrugby.com if you continue to have problems.';
-			alert(msg);
+			msg += 'Please email <a href="info@mysticrugby.com">info@mysticrugby.com</a> if you continue to have problems.';
+			mystic_alert(msg,'Error');
 		}
 		else {
-			alert("<?php echo esc_js('Thank you for registering with the Mystics. We will be in touch soon.'); ?>");
-			document.location = "<?php echo esc_js(get_home_url()); ?>";
+			var msg = "<?php echo esc_js('Thank you for registering with the Mystics. We will be in touch soon.'); ?>";
+			mystic_alert(msg, 'Thank you', function() { document.location = "<?php echo esc_js(get_home_url()); ?>"; } );
 		}
 	};
+	window.mystic_alert = function(text,title,postFunction) {
+		if (!text) return;
+		var localFunc = postFunction;
+		var dialog = jQuery('#mystic_alert_div');
+		title = (typeof title != 'string' ? '' : title);
+		dialog.prop('title', title);
+		dialog.html('<div class="mystic_alert_content">'+ text + '</div>');
+		dialog.dialog({
+			buttons: {
+				'OK': function() {
+					jQuery( this ).dialog( 'close' );
+				}
+			},
+			close: function(evt,ui) {
+				if (typeof localFunc == 'function') localFunc();
+			},
+			dialogClass: 'wp-dialog',
+			modal: true
+		});
+	}
 }
 </script>
 <?php get_footer(); ?>
