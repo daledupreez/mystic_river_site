@@ -170,7 +170,7 @@ if (typeof window.mystic_register_member != 'function') {
 			if (field) {
 				var value = field.value;
 				if ((requiredFields[fieldName] != null) && (value == '')) {
-					mystic_alert('<strong>' + requiredFields[fieldName] + '</strong> is required.','A required value is missing', function() { if (field) field.focus(); } );
+					mystic.util.alert('<strong>' + requiredFields[fieldName] + '</strong> is required.','A required value is missing', function() { if (field) field.focus(); } );
 					return;
 				}
 				postData[fieldName] = value;
@@ -192,36 +192,16 @@ if (typeof window.mystic_register_member != 'function') {
 		if (response.result == 'error') {
 			var msg = 'There was an error processing your registration.<br/>';
 			if (typeof response.error_message == 'string') {
-				msg += '<span class="mystic_alert_error">' + response.error_message + '</span>';
+				msg += '<span class="mystic_dialog_error">' + response.error_message + '</span>';
 			}
 			msg += 'Please email <a href="info@mysticrugby.com">info@mysticrugby.com</a> if you continue to have problems.';
-			mystic_alert(msg,'Error');
+			mystic.util.alert(msg,'Error');
 		}
 		else {
 			var msg = "<?php echo esc_js('Thank you for registering with the Mystics. We will be in touch soon.'); ?>";
-			mystic_alert(msg, 'Thank you', function() { document.location = "<?php echo esc_js(get_home_url()); ?>"; } );
+			mystic.util.alert(msg, 'Thank you', function() { document.location = "<?php echo esc_js(get_home_url()); ?>"; } );
 		}
 	};
-	window.mystic_alert = function(text,title,postFunction) {
-		if (!text) return;
-		var localFunc = postFunction;
-		var dialog = jQuery('#mystic_alert_div');
-		title = (typeof title != 'string' ? '' : title);
-		dialog.prop('title', title);
-		dialog.html('<div class="mystic_alert_content">'+ text + '</div>');
-		dialog.dialog({
-			buttons: {
-				'OK': function() {
-					jQuery( this ).dialog( 'close' );
-				}
-			},
-			close: function(evt,ui) {
-				if (typeof localFunc == 'function') localFunc();
-			},
-			dialogClass: 'wp-dialog',
-			modal: true
-		});
-	}
 }
 </script>
 <?php get_footer(); ?>

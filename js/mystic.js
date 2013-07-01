@@ -48,3 +48,30 @@ mystic.handler.load = function mystic_handler_load()
 {
 	mystic.util.addSidebarHandlers();
 }
+
+mystic.util.alert = function mystic_util_alert(text,title,postFunction) {
+	if (!text) return;
+	var localFunc = postFunction;
+	var dialog = jQuery('#mystic_dialog_div');
+	if (typeof dialog.dialog != 'function') {
+		var tempDiv = jQuery('<div>').html(text);
+		alert(tempDiv.text());
+		if (typeof postFunction == 'function') postFunction(); 
+		return;
+	}
+	title = (typeof title != 'string' ? '' : title);
+	dialog.prop('title', title);
+	dialog.html('<div class="mystic_dialog_content">'+ text + '</div>');
+	dialog.dialog({
+		buttons: {
+			'OK': function() {
+				jQuery( this ).dialog( 'close' );
+			}
+		},
+		close: function(evt,ui) {
+			if (typeof localFunc == 'function') localFunc();
+		},
+		dialogClass: 'wp-dialog',
+		modal: true
+	});
+}

@@ -31,6 +31,7 @@
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<div id="mystic_dialog_div" style="display: none;"></div>
 
 <?php wp_footer(); ?>
 
