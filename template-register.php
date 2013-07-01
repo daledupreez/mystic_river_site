@@ -96,13 +96,6 @@ $fields = array(
 );
  
  ?>
-<style type="text/css">
-div.mystic_register_pair input[type="text"],
-div.mystic_register_pair textarea {
-	/*border-radius: 5px;
-	background-color: #CCC;*/
-}
-</style>
 
 		<div id="primary">
 			<div id="content" class="team_data" role="main">
