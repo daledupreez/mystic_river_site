@@ -9,11 +9,11 @@ mystic.util.addSidebarHandlers = function mystic_util_addSidebarHandlers()
 	if (secondaryDiv) {
 		var asides = secondaryDiv.getElementsByTagName('aside');
 		for (var i = 0; i < asides.length; i++) {
-			var aside = asides[i];
+			var aside = asides.item(i);
 			if (aside && (aside.className.toString().indexOf('widget') > -1)) {
 				var titles = aside.getElementsByClassName('widget-title');
 				if (titles && (titles.length >= 1)) {
-					var header = titles[0];
+					var header = titles.item(0);
 					if (header) header.setAttribute('onclick','mystic.layout.toggleSidebarList("'+aside.id+'");');
 				}
 				//aside.addEventListener('click',function(){mystic.layout.toggleSidebarList(this);},false);
