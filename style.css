@@ -17,7 +17,7 @@ p {
 }
 #page {
 	max-width: 1100px;
-	background-color: #023272;
+	background-color: #001a3e;
 	margin-top: 0px;
 }
 #branding {
@@ -26,10 +26,12 @@ p {
 }
 #main {
 	padding-top: 0px;
-	background-color: #023272;
+	background: #001a3e;
+	/*background-color: #023272;*/
 }
 #access {
-	background: #002252;
+	/*background: #002252;*/
+	background: #063a78;
 	border-bottom: 2px solid white;	
 	margin-bottom: 0px;
 	padding-top: 2px;
@@ -213,14 +215,15 @@ aside.widget_search {
 	font-size: 1.1em;
 }
 #primary {
-	background-color: #023272;
+	/*background-color: #023272;*/
 	background-image: url("http://mysticrugby.com/mystic_test/images/backgrounds/main_bg2.gif");
 	background-repeat: no-repeat;
 	/*background-attachment: fixed;*/
 	background-position: top left;
 }
 #secondary {
-	margin-right: 4%;
+	margin-right: 2%;
+	min-width: 220px;
 	margin-top: 24px;
 }
 .entry-header .comments-link {
@@ -239,7 +242,8 @@ aside.widget_search {
 
 #site-generator {
 	color: white;
-	background-color: #002252;
+	background-color: #063a78;
+	/*background-color: #002252;*/
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	line-height: 2em;
@@ -285,7 +289,8 @@ table.standings tr.mysticRow td {
 }
 
 #access ul ul a {
-	background: #002252;
+	/*background: #002252;*/
+	background: #063a78;
 	border-bottom: 1px dotted #ddd;
 	color: white;
 	font-weight: 800;
@@ -305,7 +310,8 @@ table.standings tr.mysticRow td {
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
-	background: #002252;
+	background: #063a78;
+	/*background: #002252;*/
 }
 #access li:hover > a,
 #access a:focus {
