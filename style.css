@@ -330,6 +330,9 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	background: none;
 	border-width: 0px;
 }
+.error404 #primary #content {
+	padding-top: 16px
+}
 
 /* Match Widget Styles */
 
@@ -337,12 +340,17 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	text-align: center;
 }
 .widget.closed div.match_widget {
-	display: none;
+	/*display: none;*/
 }
 
 .match_widget_date,
-.match_widget_result {
+.match_widget_result,
+.match_widget_vs {
 	font-weight: bold;
+}
+
+.match_widget_result {
+	font-size: 1.5em;
 }
 
 .match_widget_team {
@@ -369,6 +377,9 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 .match_widget_venue {
 	clear: both;
 	text-align: center;
+}
+.match_widget_venue {
+	padding-top: 0.8em;
 }
 
 /* Join form styles */
