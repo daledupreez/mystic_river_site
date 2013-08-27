@@ -35,7 +35,7 @@ p {
 	border-bottom: 2px solid white;	
 	margin-bottom: 0px;
 	padding-top: 2px;
-	font-style: italic;
+	/*font-style: italic;*/
 	box-shadow: 0 12px 12px rgba(0, 0, 0, 0.4);
 }
 #access a {
@@ -46,11 +46,30 @@ p {
 #branding .only-search + #access div {
 	padding-right: 0px;
 }
+#access ul ul {
+	top: auto;
+}
 #access .current-menu-item > a,
 #access .current-menu-ancestor > a,
 #access .current_page_item > a,
 #access .current_page_ancestor > a {
 	font-weight: 800;
+}
+#access ul li.menu-item a {
+	font-weight: bold;
+	font-size: 18px;
+	font-style: italic;
+	text-shadow: 2px 2px 8px #001a3e;
+}
+#access ul li.menu-item ul li.menu-item a {
+	text-shadow: 2px 2px 8px #001a3e;
+}
+
+#access ul li.menu-item.current-menu-item a,
+#access ul li.menu-item.current-page-item a,
+#access ul li.menu-item ul li.menu-item.current-menu-item a,
+#access ul li.menu-item ul li.menu-item.current-page-item a {
+	/*text-shadow: 2px 2px 3px #BBB;*/
 }
 #branding .only-search #s {
 	background-color: #CCC;
