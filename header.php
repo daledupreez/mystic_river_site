@@ -45,6 +45,7 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
 
 	?></title>
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -55,9 +56,10 @@
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
 	 */
+	/* Disabled for Mystic River
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
-		
+	*/
 	if ( is_page_template('template-schedule.php') ) {
 		// Note: get_stylesheet_directory_uri() is needed to get the child theme path
 		wp_enqueue_style( 'mystic-schedule', get_stylesheet_directory_uri() . '/css/schedule.css' );
@@ -71,7 +73,6 @@
 		wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'jquery-ui-core' );
 		wp_enqueue_script( 'jquery-ui-dialog' );
-
 	}
 
 	/* Always have wp_head() just before the closing </head>
