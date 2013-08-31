@@ -49,7 +49,8 @@ table.mystic_schedule {
 table.mystic_schedule tbody td {
 	border-top: 1px solid #666;
 	vertical-align: middle;
-	line-height: 1.2em;
+	/* use pixels to keep larger text vertically centered */
+	line-height: 20px;
 }
 .mystic_schedule_table_header th {
 	background-color: #023272;
