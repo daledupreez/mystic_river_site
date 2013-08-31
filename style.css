@@ -113,6 +113,11 @@ header .entry-meta .sep,
     padding-top: 0.5em;
 }
 
+a.more-link {
+	color: white;
+	font-weight: bold;
+}
+
 .page-title {
     color: white;
     font-size: 12px;
@@ -138,7 +143,7 @@ aside.widget_search {
 	text-transform: none;
 	letter-spacing: normal;
 	line-height: inherit;
-	background-color: #555;
+	background-color: #063a78;
 	/*border-top-left-radius: 5px;
 	border-top-right-radius: 5px;*/
 	border-top: 1px solid #999;
@@ -369,6 +374,8 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 }
 
 .match_widget_date,
+.match_widget_time,
+.match_widget_tournament,
 .match_widget_result,
 .match_widget_vs {
 	font-weight: bold;
@@ -390,6 +397,10 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	clear: both;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+.match_widget_next {
+	text-align: center;
+	font-weight: bold;
 }
 
 .match_widget_more_info {
