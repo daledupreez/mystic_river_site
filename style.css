@@ -248,6 +248,7 @@ aside.widget_search {
 	background-repeat: no-repeat;
 	/*background-attachment: fixed;*/
 	background-position: top left;
+	min-height: 500px;
 }
 #secondary {
 	margin-right: 2%;

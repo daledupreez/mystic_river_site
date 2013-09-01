@@ -101,14 +101,14 @@ $fields = array(
 			<div id="content" class="team_data" role="main">
 				<article class="hentry">
 					<header class="entry-header">
-						<h1 class="entry-title">Join</h1>
+						<h1 class="entry-title">Register with Mystic River</h1>
 					</header>
 					<div class="entry-content">
 						<div id="mystic_alert_div" style="display: none;"></div>
 						<form id="mystic_register_form" action="<?php echo esc_url(get_home_url()); ?>">
 <?php
 	echo '<div class="mystic_register_email_lists">';
-	echo '<h3>' . esc_html( __( 'Membership', 'team_data' ) ) . '</h3>';
+	echo '<h3>' . esc_html( __( 'Membership Type', 'team_data' ) ) . '</h3>';
 	$list_table = $wpdb->prefix . 'team_data_list';
 	$lists = $wpdb->get_results( "SELECT IF(display_name <> '', display_name, name) AS name, auto_enroll FROM $list_table WHERE admin_only = 0" );
 	foreach ($lists as $list_pos => $list) {
