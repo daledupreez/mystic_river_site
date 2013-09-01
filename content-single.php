@@ -36,7 +36,7 @@
 			if ( '' != $tag_list ) {
 				$utility_text .= '<span class="post_meta_tags">' . __( 'Tags: %2$s', 'team_data') . '</span>';
 			}
-			$utility_text .= '<a href="%3$s" rel="bookmark" class="post_meta_link">' . __( 'Link' , 'team_data' ) . '</a>';
+			$utility_text .= '<a href="%3$s" rel="bookmark" class="post_meta_link">' . __( 'Permanent Link' , 'team_data' ) . '</a>';
 			// Add FB/Twitter/share links here
 
 			printf(
