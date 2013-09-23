@@ -269,14 +269,21 @@ aside.widget_search {
     color: rgba(51, 51, 51, 0.8);*/
 }
 
-#site-generator {
+#colophon {
 	color: white;
+	border-top: 1px solid white;
 	background-color: #063a78;
 	/*background-color: #002252;*/
 	padding-top: 1.5em;
-	padding-bottom: 1.5em;
+	padding-bottom: 1em;
 	line-height: 2em;
 }
+#site-generator {
+	background-color: #063a78;
+	padding: 0px;
+	padding-top: 1em; 
+}
+
 #site-generator a {
 	color: white;
 }
@@ -286,6 +293,27 @@ aside.widget_search {
 }
 
 /* End overridden styles */
+
+#sponsors {
+	height: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+a.sponsor_link {
+	display: inline-block;
+	vertical-align: middle;
+}
+img.sponsor_logo {
+	display: inline-block;
+	max-height: 80px;
+	vertical-align: middle;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#link_ruggers img {
+	width: 260px;
+}
+
 #content.team_data {
 	width: 70%;
 }
