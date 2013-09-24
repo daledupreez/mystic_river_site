@@ -30,6 +30,9 @@
 				<a id="link_harp" class="sponsor_link" href="http://www.harpboston.com" target="_blank" alt="The Harp">
 					<img class="sponsor_logo" src="<?php echo $imageDir; ?>harp_logo.png" />
 				</a>
+				<a id="link_usa_rugby" class="sponsor_link" href="http://www.usarugby.org" target="_blank" alt="USA Rugby" title="USA Rugby">
+					<img class="sponsor_logo" src="<?php echo $imageDir; ?>usa_rugby_logo.png" />
+				</a>
 				<a id="link_llanllyr" class="sponsor_link" href="http://www.llanllyrwater.com/" target="_blank" alt="Llanllyr Source Water">
 					<img class="sponsor_logo" src="<?php echo $imageDir; ?>llanllyr_source_logo.png" />
 				</a>
@@ -41,9 +44,11 @@
 			<div id="site-generator">
 				<a href="<?php echo esc_url( get_admin_url() ); ?>" title="Log in to Admin pages">Admin</a>
 				<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-				<a href="<?php echo esc_url( get_bloginfo('rss2_url') ); ?>" title="View RSS Feed for News">News RSS</a>
+				<a href="<?php echo esc_url( get_bloginfo('rss2_url') ); ?>" title="View RSS Feed">RSS</a>
+				<!--
 				<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 				<a href="<?php echo esc_url( get_bloginfo('comments_rss2_url') ); ?>" title="View RSS Feed for Comments">Comments RSS</a>
+				-->
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
