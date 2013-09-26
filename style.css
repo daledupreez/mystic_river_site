@@ -254,6 +254,7 @@ aside.widget_search {
 	margin-right: 2%;
 	min-width: 220px;
 	margin-top: 24px;
+	margin-bottom: 24px;
 }
 .entry-header .comments-link {
 	display: none;
@@ -292,16 +293,27 @@ aside.widget_search {
 	text-decoration: none;
 }
 
+/* Media overrides */
+
+@media (max-width: 800px) {
+	#main #secondary {
+		margin-top: 24px;
+		margin-bottom: 24px;
+		max-width: 70%;
+	}
+}
+
 /* End overridden styles */
 
 #sponsors {
-	height: 100px;
+	min-height: 100px;
 	text-align: center;
 	vertical-align: middle;
 }
 a.sponsor_link {
 	display: inline-block;
 	vertical-align: middle;
+	line-height: 80px;
 }
 img.sponsor_logo {
 	display: inline-block;
