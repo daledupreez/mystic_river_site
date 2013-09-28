@@ -493,6 +493,7 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	padding-left: 5px;
 	padding-right: 5px;
 	width: 80px;
+	vertical-align: middle;
 }
 .match_widget_pair.match_widget_us {
 	/*float: left;*/
