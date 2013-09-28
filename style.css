@@ -27,15 +27,12 @@ p {
 #main {
 	padding-top: 0px;
 	background: #001a3e;
-	/*background-color: #023272;*/
 }
 #access {
-	/*background: #002252;*/
 	background: #063a78;
 	border-bottom: 2px solid white;	
 	margin-bottom: 0px;
 	padding-top: 2px;
-	/*font-style: italic;*/
 	box-shadow: 0 12px 12px rgba(0, 0, 0, 0.4);
 }
 #access a {
@@ -48,6 +45,7 @@ p {
 }
 #access ul ul {
 	top: auto;
+	width: 168px;
 }
 #access .current-menu-item > a,
 #access .current-menu-ancestor > a,
@@ -63,6 +61,7 @@ p {
 }
 #access ul li.menu-item ul li.menu-item a {
 	text-shadow: 2px 2px 8px #001a3e;
+	font-size: 16px;
 }
 
 #access ul li.menu-item.current-menu-item a,
@@ -125,8 +124,6 @@ a.more-link {
 }
 
 aside.widget {
-	/*border: 1px solid white;
-	border-radius: 5px;*/
 	margin-bottom: 0.75em;
 }
 aside.widget_search {
@@ -136,7 +133,6 @@ aside.widget_search {
 }
 .widget-title {
 	font-weight: 700;
-	/*font-style: italic;*/
 	font-size: 1.2em;
 	color: white;
 	padding-left: 5px;
@@ -144,8 +140,6 @@ aside.widget_search {
 	letter-spacing: normal;
 	line-height: inherit;
 	background-color: #063a78;
-	/*border-top-left-radius: 5px;
-	border-top-right-radius: 5px;*/
 	border-top: 1px solid #999;
 	border-bottom: 1px solid #999;
 	cursor: pointer;
@@ -246,7 +240,6 @@ aside.widget_search {
 	/*background-color: #023272;*/
 	background-image: url("http://mysticrugby.com/mystic_test/images/backgrounds/main_bg2.gif");
 	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/
 	background-position: top left;
 	min-height: 500px;
 }
@@ -291,6 +284,31 @@ aside.widget_search {
 #site-generator a:hover, #site-generator a:active, #site-generator a:focus {
 	color: red;
 	text-decoration: none;
+}
+.social_logo {
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.facebook_logo {
+	background-image: url('images/facebook_logo.png');
+	background-size: auto 30px;
+	height: 30px;
+	width: 30px;
+	margin-right: 20px;
+}
+.facebook_logo:hover {
+	background-image: url('images/facebook_logo_blue.png');
+}
+.twitter_logo {
+	background-image: url('images/twitter_logo.png');
+	background-size: auto 50px;
+	height: 50px;
+	width: 50px;
+}
+.twitter_logo:hover {
+	background-image: url('images/twitter_logo_blue.png');
 }
 
 /* Media overrides */
@@ -358,29 +376,23 @@ table.standings tr.mysticRow td {
 }
 
 #access ul ul a {
-	/*background: #002252;*/
 	background: #063a78;
 	border-bottom: 1px dotted #ddd;
 	color: white;
 	font-weight: 800;
+	width: 148px;
 }
 #access ul ul li:first-child a:first-child {
 	border-top: 2px solid white;
 }
 #access li > a,
 #access a {
-	/*
-	border: 1px solid #002252;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
-	border-bottom: 0px solid #002252;
-	*/
+	line-height: 2.8em;
 }
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
 	background: #063a78;
-	/*background: #002252;*/
 }
 #access li:hover > a,
 #access a:focus {
@@ -430,31 +442,72 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	font-size: 1.5em;
 }
 
+.match_widget_result_details,
+.match_widget_result_details div {
+	vertical-align: middle;
+}
+
 .match_widget_team {
-	float: left;
+	/*float: left;*/
 }
 
 .match_widget_score {
-	float: right;
+	/*float: right;*/
+	font-weight: bold;
+	font-size: 1.25em;
 }
 
 .match_widget_pair {
-	clear: both;
-	padding-left: 10px;
-	padding-right: 10px;
+	/*clear: both;*/
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 80px;
 }
 .match_widget_next {
 	text-align: center;
-	font-weight: bold;
+	/*font-weight: bold;*/
+}
+
+.match_widget_logo {
+	margin-top: 10px;
+	height: 50px;
+	/*width: 50px;*/
+	vertical-align: middle;
+}
+.match_widget_logo img {
+	max-width: 100%;
+	max-height: 50px;
+	vertical-align: middle;
 }
 
 .match_widget_more_info {
-	clear: both;
+	/*clear: both;*/
+
 	padding-top: 10px;
 	text-align: center;
 }
 
-.match_widget_vs,
+.match_widget_next_details {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 80px;
+}
+.match_widget_pair.match_widget_us {
+	/*float: left;*/
+}
+.match_widget_pair.match_widget_them {
+	/*float: right;*/
+}
+
+.match_widget_vs {
+	display: inline-block;
+	vertical-align: middle;
+	height: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
 .match_widget_venue {
 	clear: both;
 	text-align: center;
