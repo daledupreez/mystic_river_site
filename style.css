@@ -96,7 +96,7 @@ body, input, textarea {
 	color: white;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	font-size: 1.2em;
+	font-size: 18px;
 }
 .entry-meta {
 	color: #CCC;
@@ -315,9 +315,13 @@ aside.widget_search {
 
 @media (max-width: 800px) {
 	#main #secondary {
+		clear: both;
 		margin-top: 24px;
 		margin-bottom: 24px;
-		max-width: 70%;
+		max-width: 65%;
+	}
+	#nav-below {
+		border-width: 0px;
 	}
 }
 
