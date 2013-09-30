@@ -142,13 +142,13 @@ aside.widget_search {
 	background-color: #063a78;
 	border-top: 1px solid #999;
 	border-bottom: 1px solid #999;
-	cursor: pointer;
+	/*cursor: pointer;*/
 }
 .widget a {
 	color: white;
 }
 .widget-title:active, .widget-title:hover, .widget-title:focus {
-	color: red;
+	/*color: red;*/
 }
 
 .widget ul li {
