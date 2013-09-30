@@ -55,13 +55,13 @@ p {
 }
 #access ul li.menu-item a {
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 16px;
 	font-style: italic;
 	text-shadow: 2px 2px 8px #001a3e;
 }
 #access ul li.menu-item ul li.menu-item a {
 	text-shadow: 2px 2px 8px #001a3e;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 #access ul li.menu-item.current-menu-item a,
@@ -261,6 +261,15 @@ aside.widget_search {
 .entry-header .comments-link a:hover, .entry-header .comments-link a:focus, .entry-header .comments-link a:active {
 /*    background-color: white;
     color: rgba(51, 51, 51, 0.8);*/
+}
+header.entry-header {
+	background-color: #063a78;
+	/* Override padding from wrapper element */
+	margin: -5px -10px 0px;
+	padding: 5px 10px;
+	border-bottom: 1px solid white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 #colophon {
