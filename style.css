@@ -446,23 +446,38 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	font-size: 1.5em;
 }
 
-.match_widget_result_details,
-.match_widget_result_details div {
+.match_widget_result_details.match_widget_with_logos,
+.match_widget_result_details.match_widget_with_logos div {
 	vertical-align: middle;
 }
 
-.match_widget_team {
-	/*float: left;*/
+.match_widget_result_details .match_widget_team {
+	float: left;
+}
+.match_widget_result_details.match_widget_with_logos .match_widget_team {
+	float: none;
+}
+.match_widget_result_details .match_widget_score {
+	float: right;
+}
+.match_widget_result_details.match_widget_with_logos .match_widget_score {
+	float: none;
 }
 
 .match_widget_score {
-	/*float: right;*/
 	font-weight: bold;
+}
+.match_widget_with_logos .match_widget_pair .match_widget_score {
 	font-size: 1.25em;
 }
 
 .match_widget_pair {
-	/*clear: both;*/
+	clear: both;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.match_widget_with_logos .match_widget_pair {
+	clear: none;
 	display: inline-block;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -476,7 +491,6 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 .match_widget_logo {
 	margin-top: 10px;
 	height: 50px;
-	/*width: 50px;*/
 	vertical-align: middle;
 }
 .match_widget_logo img {
@@ -486,8 +500,6 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 }
 
 .match_widget_more_info {
-	/*clear: both;*/
-
 	padding-top: 10px;
 	text-align: center;
 }
@@ -496,23 +508,32 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	display: inline-block;
 	padding-left: 5px;
 	padding-right: 5px;
+}
+.match_widget_next_details .match_widget_with_logos {
 	width: 80px;
 	vertical-align: middle;
 }
-.match_widget_pair.match_widget_us {
-	/*float: left;*/
+.match_widget_next_details.match_widget_us .match_widget_us,
+.match_widget_next_details.match_widget_them .match_widget_them {
+	font-weight: bold;
 }
-.match_widget_pair.match_widget_them {
-	/*float: right;*/
+.match_widget_with_logos .match_widget_next_details.match_widget_us .match_widget_us,
+.match_widget_with_logos .match_widget_next_details.match_widget_them .match_widget_them {
+	font-weight: normal;
 }
-
 .match_widget_vs {
-	display: inline-block;
-	vertical-align: middle;
-	height: 50px;
 	padding-left: 5px;
 	padding-right: 5px;
 }
+.match_widget_result_details .match_widget_vs {
+	display: none;
+}
+.match_widget_with_logos .match_widget_vs {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
 .match_widget_venue {
 	clear: both;
 	text-align: center;
