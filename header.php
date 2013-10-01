@@ -45,6 +45,8 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
 
 	?></title>
+<meta name="description" content="Boston Rugby at its finest. Established in 1974, Mystic River Rugby Club is Boston's PREMIER Division I rugby team and prides itself on the best rugby facilities in the Northeast." />
+<meta name="keywords" content="Boston Rugby, Rugby Boston, Mystic River Rugby Club, Mystic Rugby, Mystic River Rugby, Massachusetts Rugby, MA Rugby, Youth Rugby, Rookie Rugby" />
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
