@@ -14,7 +14,7 @@ mystic.util.addSidebarHandlers = function mystic_util_addSidebarHandlers()
 				var titles = aside.getElementsByClassName('widget-title');
 				if (titles && (titles.length >= 1)) {
 					var header = titles.item(0);
-					if (header) header.setAttribute('onclick','mystic.layout.toggleSidebarList("'+aside.id+'");');
+					//if (header) header.setAttribute('onclick','mystic.layout.toggleSidebarList("'+aside.id+'");');
 				}
 				//aside.addEventListener('click',function(){mystic.layout.toggleSidebarList(this);},false);
 			}

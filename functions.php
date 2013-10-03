@@ -11,9 +11,9 @@ function my_child_theme_setup() {
 	remove_filter( 'body_class', 'twentyeleven_body_classes' );
 	
 	/* Remove the twentyeleven registered sidebars */
-	remove_action( 'widgets_init', 'twentyeleven_widgets_init' );
+	//remove_action( 'widgets_init', 'twentyeleven_widgets_init' );
 	/* Add the modified version of the widgets_init function in this file */
-	add_action( 'widgets_init', 'mystic_widgets_init' );
+	//add_action( 'widgets_init', 'mystic_widgets_init' );
 }
 
 function mystic_init() {
