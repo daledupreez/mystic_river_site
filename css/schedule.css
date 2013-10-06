@@ -19,6 +19,7 @@ article.mystic_schedule .entry-content {
 
 table.mystic_schedule {
 	padding: 0px;
+	margin-bottom: 0px;
 	background-image: -moz-linear-gradient(right, #555555 0%, #333333 50%);
 	background-image: -o-linear-gradient(right, #555555 0%, #33333 50%);
 	background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #555555), color-stop(0.5, #333333));
