@@ -36,6 +36,7 @@ get_header(); ?>
 		$matches = $team_data_ajax->get_matches($conditions);
 		
 		$seasons = $team_data_ajax->get_all_seasons();
+		$seasons = array_reverse($seasons, true);
 		$levels = $team_data_ajax->get_all_levels();
 ?>
 		<div style="text-align: center;">
