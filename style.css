@@ -542,6 +542,9 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	max-height: 50px;
 	vertical-align: middle;
 }
+.match_widget_logo.match_widget_logo_empty {
+	height: 0px;
+}
 
 .match_widget_more_info {
 	padding-top: 10px;
