@@ -14,7 +14,7 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="page-title"><?php echo __( 'Latest News', 'mystic_river_site' ); ?></h1>
+					<h1 class="page-title"><?php echo the_title(); ?></h1>
 				</header>
 
 				<?php /* twentyeleven_content_nav( 'nav-above' ); */ ?>

@@ -5,6 +5,10 @@
 // it's filter before we can remove it.
 add_action( 'after_setup_theme', 'my_child_theme_setup' );
 
+add_action('init','mystic_init');
+
+add_filter('widget_display_callback', 'mystic_filter_widget_display');
+
 function my_child_theme_setup() {
 	// Removes the filter that adds the "singular" class to the body element
 	// which centers the content and does not allow for a sidebar
@@ -22,8 +26,6 @@ function mystic_init() {
 	add_action('wp_footer','mystic_onload_script');
 }
 
-add_action('init','mystic_init');
-
 function mystic_onload_script() {
 ?>
 <script type="text/javascript">
@@ -32,6 +34,17 @@ if (window.jQuery) {
 }
 </script>
 <?php
+}
+
+function mystic_filter_widget_display( $widget_instance )
+{
+	$blocked_titles = array( 'Archives', 'Categories', 'Monthly Archives', 'Tag Cloud', 'Tags' );
+	if ( ( !empty($widget_instance['title']) ) && ( in_array($widget_instance['title'], $blocked_titles) ) ) {
+		if ( !is_page() || ( get_the_title() != 'News Archives' ) ) {
+			return false;
+		}
+	}
+	return $widget_instance;
 }
 
 /**
