@@ -71,10 +71,10 @@ schedule.fn.render = function schedule_fn_render()
 				html.push('<th class="mystic_team">' + schedule.fn.getLoc('Team') + '</th>');
 				html.push('<th>' + schedule.fn.getLoc('Opposition') + '</th>');
 				html.push('<th colspan="2">' + schedule.fn.getLoc('Venue') + '</th>');
+				html.push('<th colspan="4" style="text-align: center;">' + schedule.fn.getLoc('Result') + '</th>');
+				/*html.push('<th>&nbsp;</th>');
 				html.push('<th>&nbsp;</th>');
-				html.push('<th>&nbsp;</th>');
-				html.push('<th>&nbsp;</th>');
-				html.push('<th>&nbsp;</th>');
+				html.push('<th>&nbsp;</th>');*/
 				html.push('</tr>');
 			}
 			if ((match._month != last.month) || (match._year != last.year)) {
@@ -110,7 +110,7 @@ schedule.fn.render = function schedule_fn_render()
 				html.push('<td class="mystic_result mystic_result_theirs">' + match.their_score + '</td>');
 			}
 			else if ((match.result != null) && (match.result !== '')) {
-				if (match.result.length > 2) {
+				if (match.result.length > 1) {
 					html.push('<td class="mystic_result mystic_result_text" colspan="4">' + match.result + '</td>');
 				}
 				else {
