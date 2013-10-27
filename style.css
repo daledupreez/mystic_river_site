@@ -579,7 +579,7 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	display: none;
 }
 .match_widget_with_logos .match_widget_vs {
-	display: inline-block;
+	/* display: inline-block; */
 	vertical-align: middle;
 	height: 100%;
 }
