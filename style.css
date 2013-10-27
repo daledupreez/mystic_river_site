@@ -347,17 +347,17 @@ body.single-post article.post header.entry-header div.entry-meta {
 
 /* End overridden styles */
 
-#sponsors {
+#footer_links {
 	min-height: 100px;
 	text-align: center;
 	vertical-align: middle;
 }
-a.sponsor_link {
+a.footer_link {
 	display: inline-block;
 	vertical-align: middle;
 	line-height: 80px;
 }
-img.sponsor_logo {
+img.footer_link_image {
 	display: inline-block;
 	max-height: 80px;
 	vertical-align: middle;

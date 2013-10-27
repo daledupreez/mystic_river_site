@@ -23,28 +23,28 @@
 					get_sidebar( 'footer' );
 			?>
 
-			<div id="sponsors">
-				<a id="link_coors" class="sponsor_link" href="http://www.coorslight.com" target="_blank" alt="Coors Light">
-					<img class="sponsor_logo" src="<?php echo $imageDir; ?>coors_light_logo.png" />
+			<div id="footer_links">
+				<a id="link_coors" class="footer_link" href="http://www.coorslight.com" target="_blank" alt="Coors Light">
+					<img class="footer_link_image" src="<?php echo $imageDir; ?>coors_light_logo.png" />
 				</a>
-				<a id="link_harp" class="sponsor_link" href="http://www.harpboston.com" target="_blank" alt="The Harp">
-					<img class="sponsor_logo" src="<?php echo $imageDir; ?>harp_logo.png" />
+				<a id="link_harp" class="footer_link" href="http://www.harpboston.com" target="_blank" alt="The Harp">
+					<img class="footer_link_image" src="<?php echo $imageDir; ?>harp_logo.png" />
 				</a>
-				<a id="link_usa_rugby" class="sponsor_link" href="http://www.usarugby.org" target="_blank" alt="USA Rugby" title="USA Rugby">
-					<img class="sponsor_logo" src="<?php echo $imageDir; ?>usa_rugby_logo.png" />
+				<a id="link_usa_rugby" class="footer_link" href="http://www.usarugby.org" target="_blank" alt="USA Rugby" title="USA Rugby">
+					<img class="footer_link_image" src="<?php echo $imageDir; ?>usa_rugby_logo.png" />
 				</a>
-				<a id="link_llanllyr" class="sponsor_link" href="http://www.llanllyrwater.com/" target="_blank" alt="Llanllyr Source Water">
-					<img class="sponsor_logo" src="<?php echo $imageDir; ?>llanllyr_source_logo.png" />
+				<a id="link_llanllyr" class="footer_link" href="http://www.llanllyrwater.com/" target="_blank" alt="Llanllyr Source Water">
+					<img class="footer_link_image" src="<?php echo $imageDir; ?>llanllyr_source_logo.png" />
 				</a>
-				<a id="link_ruggers" class="sponsor_link" href="http://www.ruggers.com/" target="_blank" alt="Ruggers">
-					<img class="sponsor_logo" src="<?php echo $imageDir; ?>ruggers_logo.png" />
+				<a id="link_ruggers" class="footer_link" href="http://www.ruggers.com/" target="_blank" alt="Ruggers">
+					<img class="footer_link_image" src="<?php echo $imageDir; ?>ruggers_logo.png" />
 				</a>
 			</div>
 
 			<div id="site-generator">
-				<a href="<?php echo esc_url( get_admin_url() ); ?>" title="Log in to Admin pages">Admin</a>
+				<a href="<?php echo esc_url( get_admin_url() ); ?>" title="Log in to Admin pages" style="color: white;">Admin</a>
 				<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-				<a href="<?php echo esc_url( get_bloginfo('rss2_url') ); ?>" title="View RSS Feed">RSS</a>
+				<a href="<?php echo esc_url( get_bloginfo('rss2_url') ); ?>" title="View RSS Feed" style="color: white;">RSS</a>
 				<!--
 				<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
 				<a href="<?php echo esc_url( get_bloginfo('comments_rss2_url') ); ?>" title="View RSS Feed for Comments">Comments RSS</a>
