@@ -44,7 +44,7 @@ get_header(); ?>
 				<label for="mystic_season">Season:</label>
 				<select id="mystic_season" class="mystic_select">
 <?php
-				echo '<option value=""' . ($current_season_val == '' ? ' selected="selected"' : '') . '>All</option>' . "\n";
+				//echo '<option value=""' . ($current_season_val == '' ? ' selected="selected"' : '') . '>All</option>' . "\n";
 				foreach($seasons as $season) {
 					$selected = ($current_season_val == $season['id'] ? ' selected="selected"' : '');
 					echo '<option value="' . $season['id'] . '"' . $selected . '>' . $season['name'] . '</option>' . "\n";
