@@ -68,7 +68,7 @@ schedule.fn.render = function schedule_fn_render()
 				html.push('<tr class="mystic_schedule_table_header">');
 				html.push('<th>' + schedule.fn.getLoc('Date') + '</th>');
 				html.push('<th>' + schedule.fn.getLoc('Time') + '</th>');
-				html.push('<th class="mystic_team">' + schedule.fn.getLoc('Team') + '</th>');
+				html.push('<th class="mystic_level">' + schedule.fn.getLoc('Team') + '</th>');
 				html.push('<th>' + schedule.fn.getLoc('Opposition') + '</th>');
 				html.push('<th colspan="2">' + schedule.fn.getLoc('Venue') + '</th>');
 				html.push('<th colspan="4" style="text-align: center;">' + schedule.fn.getLoc('Result') + '</th>');
