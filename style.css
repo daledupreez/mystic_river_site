@@ -251,8 +251,9 @@ aside.widget_search {
 	min-height: 500px;
 }
 #secondary {
-	margin-right: 2%;
-	min-width: 220px;
+	margin-right: 0%;
+	min-width: 160px;
+	width: 22%;
 	margin-top: 24px;
 	margin-bottom: 24px;
 }
