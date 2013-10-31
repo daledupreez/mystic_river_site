@@ -184,7 +184,7 @@ aside.widget_search {
 	padding: 10px;
 }
 /*Styles for areas that have grey background*/
-.hentry, .no-results, .post, #secondary,
+.hentry, .hentry:last-child, .no-results, .post, #secondary,
 #respond, .nocomments,
 .nav-previous a, .nav-next a {
 	/* Fallback for web browsers that don't support RGBa */
