@@ -129,7 +129,7 @@ $fields = array(
 			$field_required = isset($required_list[$field]);
 			echo '<div class="mystic_register_pair">';
 			echo '<label for="mystic_register__' . $field . '"' . ($field_required ? ' class="mystic_register_required"' : '') . '>' . esc_html($field_data['label']) . ( $field_required ? '*' : '') . '</label>';
-			echo '<input id="mystic_register__' . $field . '" type="text" name="' . $field . '" ' . ( $field_required ? 'required' : '') . ' />';
+			echo '<input id="mystic_register__' . $field . '" type="' . $field_data['type'] . '" name="' . $field . '" ' . ( $field_required ? 'required' : '') . ' />';
 			echo '</div>';
 		}
 		echo '</div>';

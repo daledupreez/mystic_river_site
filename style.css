@@ -609,6 +609,9 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	font-weight: bold;
 }
 .mystic_register_pair input[type="text"],
+.mystic_register_pair input[type="email"],
+.mystic_register_pair input[type="tel"],
+.mystic_register_pair input[type="date"],
 .mystic_register_pair textarea {
 	color: #333;
 	background-color: #CCC;
