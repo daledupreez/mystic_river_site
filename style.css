@@ -346,6 +346,18 @@ body {
 
 /* Media overrides */
 
+@media (max-width: 1200px) {
+	body {
+		background-size: 900px;
+	}
+}
+
+@media (max-width: 1000px) {
+	body {
+		background-size: 800px;
+	}
+}
+
 @media (max-width: 800px) {
 	#primary {
 		margin-top: 24px;
