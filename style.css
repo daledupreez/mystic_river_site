@@ -17,7 +17,8 @@ p {
 }
 #page {
 	max-width: 1100px;
-	background-color: #001a3e;
+	/*background-color: #001a3e;*/
+	background: none;
 	margin-top: 0px;
 }
 #branding {
@@ -26,7 +27,8 @@ p {
 }
 #main {
 	padding-top: 0px;
-	background: #001a3e;
+	/*background: #001a3e;*/
+	background: none;
 }
 #access {
 	background: #063a78;
@@ -245,9 +247,10 @@ aside.widget_search {
 }
 #primary {
 	/*background-color: #023272;*/
-	background-image: url("images/background.gif");
+	/*background-image: url("images/background.gif");
 	background-repeat: no-repeat;
-	background-position: top left;
+	background-position: top left;*/
+	background: none;
 	min-height: 500px;
 }
 #secondary {
@@ -286,15 +289,17 @@ body.single-post article.post header.entry-header div.entry-meta {
 
 #colophon {
 	color: white;
-	border-top: 1px solid white;
-	background-color: #063a78;
+	border-top: none;
+	background: none;
+	/*background-color: #063a78;*/
 	/*background-color: #002252;*/
 	padding-top: 1.5em;
 	padding-bottom: 1em;
 	line-height: 2em;
 }
 #site-generator {
-	background-color: #063a78;
+	/*background-color: #063a78;*/
+	background: none;
 	padding: 0px;
 	padding-top: 1em; 
 }
@@ -332,6 +337,13 @@ body.single-post article.post header.entry-header div.entry-meta {
 	background-image: url('images/twitter_logo_blue.png');
 }
 
+body {
+	background-image: url('images/background_clean.jpg');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 1000px auto;
+}
+
 /* Media overrides */
 
 @media (max-width: 800px) {
@@ -352,6 +364,9 @@ body.single-post article.post header.entry-header div.entry-meta {
 	min-height: 100px;
 	text-align: center;
 	vertical-align: middle;
+	border-top: 1px solid white;
+	padding-top: 1.5em;
+	background-color: #063a78;
 }
 a.footer_link {
 	display: inline-block;
