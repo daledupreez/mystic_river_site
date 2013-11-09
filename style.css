@@ -348,20 +348,19 @@ body {
 
 @media (max-width: 1300px) {
 	body {
-		background-size: 800px;
+		background-size: 700px;
 	}
 }
 @media (max-width: 1150px) {
 	body {
-		background-size: 700px;
+		background-size: 600px;
 		background-position-y: 50px;
 	}
 }
 
 @media (max-width: 1000px) {
 	body {
-		background-size: 600px;
-		background-position-y: 100px;
+		background: none;
 	}
 }
 
@@ -378,15 +377,6 @@ body {
 	}
 	#nav-below {
 		border-width: 0px;
-	}
-	body {
-		background-size: contain;
-		background-position-y: 200px;
-	}
-}
-@media (max-width: 600px) {
-	body {
-		background: none;
 	}
 }
 
