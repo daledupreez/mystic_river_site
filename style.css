@@ -349,12 +349,13 @@ body {
 @media (max-width: 1300px) {
 	body {
 		background-size: 700px;
+		background-position-y: 50px;
 	}
 }
 @media (max-width: 1150px) {
 	body {
 		background-size: 600px;
-		background-position-y: 50px;
+		background-position-y: 100px;
 	}
 }
 
