@@ -346,15 +346,22 @@ body {
 
 /* Media overrides */
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
 	body {
-		background-size: 900px;
+		background-size: 800px;
+	}
+}
+@media (max-width: 1150px) {
+	body {
+		background-size: 700px;
+		background-position-y: 50px;
 	}
 }
 
 @media (max-width: 1000px) {
 	body {
-		background-size: 800px;
+		background-size: 600px;
+		background-position-y: 100px;
 	}
 }
 
@@ -374,7 +381,7 @@ body {
 	}
 	body {
 		background-size: contain;
-		background-position: center left;
+		background-position-y: 200px;
 	}
 }
 @media (max-width: 600px) {
