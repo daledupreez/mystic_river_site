@@ -347,6 +347,10 @@ body {
 /* Media overrides */
 
 @media (max-width: 800px) {
+	#primary {
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
 	#main #secondary {
 		clear: both;
 		margin-top: 24px;
@@ -355,6 +359,15 @@ body {
 	}
 	#nav-below {
 		border-width: 0px;
+	}
+	body {
+		background-size: contain;
+		background-position: center left;
+	}
+}
+@media (max-width: 600px) {
+	body {
+		background: none;
 	}
 }
 
