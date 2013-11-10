@@ -91,7 +91,7 @@ schedule.fn.render = function schedule_fn_render()
 			html.push('<td>' + dateContents + '</td>');
 			html.push('<td>' + String(match._time).substring(0,5) + '</td>');
 			html.push('<td class="mystic_level">' + match.level + '</td>');
-			html.push('<td class="mystic_opposition">' + (match.tourney_name ? match.tourney_name : match.team) + '</td>');
+			html.push('<td class="mystic_opposition">' + (match.tourney_name ? match.tourney_name : match.team) + (match.comment ? ' (' + match.comment + ')' : '') + '</td>');
 			html.push('<td>' + (1 == parseInt(match.is_home,10) ? 'H' : 'A') + '</td>');
 			html.push('<td>' + match.venue + '</td>');
 			if ((match.our_score != null) && (match.their_score != null)) {

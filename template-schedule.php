@@ -47,7 +47,7 @@ get_header(); ?>
 				//echo '<option value=""' . ($current_season_val == '' ? ' selected="selected"' : '') . '>All</option>' . "\n";
 				foreach($seasons as $season) {
 					$selected = ($current_season_val == $season['id'] ? ' selected="selected"' : '');
-					echo '<option value="' . $season['id'] . '"' . $selected . '>' . $season['name'] . '</option>' . "\n";
+					echo '<option value="' . $season['id'] . '"' . $selected . '>' . esc_html($season['name']) . '</option>' . "\n";
 				}
 ?>
 				</select>
@@ -58,7 +58,7 @@ get_header(); ?>
 				<option value="" selected="selected">All</option>
 <?php
 				foreach($levels as $level) {
-					echo '<option value="' . $level['id'] . '">' . $level['name'] . '</option>' . "\n";
+					echo '<option value="' . $level['id'] . '">' . esc_html($level['name']) . '</option>' . "\n";
 				}
 ?>
 				</select>
