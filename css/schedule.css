@@ -2,7 +2,7 @@
 Schedule CSS.
 */
 
-article.mystic_schedule {
+article.mystic_schedule, article.hentry.mystic_schedule, article.hentry.mystic_schedule:last-child {
 	/*background-color: rgba(51, 51, 51, 1.0);*/
 	padding: 0px;
 	background-image: -moz-linear-gradient(right, #555555 0%, #333333 50%);
