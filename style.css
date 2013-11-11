@@ -390,6 +390,36 @@ body {
 	}
 }
 
+/* iPad specific hacks */
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	body {
+		background-image: url('images/background_clean.jpg');
+		background-repeat: no-repeat;
+		background-position: top left;
+		background-size: 600px;
+		background-position-y: 100px;
+	}
+	#primary {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	#main #secondary {
+		float: right;
+		clear: none;
+		margin-right: 0%;
+		width: 22%;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	#content {
+		margin-top: 24px;
+		margin-bottom: 24px;
+		margin-left: 15%;
+		margin-right: 34%;
+		width: 58.4%;
+	}
+}
+
 /* End overridden styles */
 
 #footer_links {
