@@ -408,10 +408,8 @@ body {
 		clear: none;
 		margin-right: 0%;
 		width: 22%;
-		margin-top: 0px;
-		margin-bottom: 0px;
 	}
-	#content {
+	#main #content {
 		margin-top: 24px;
 		margin-bottom: 24px;
 		margin-left: 15%;
