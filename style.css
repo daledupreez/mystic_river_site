@@ -365,7 +365,7 @@ body {
 	}
 }
 
-@media (max-width: 799px) {
+@media (max-width: 700px) {
 	body {
 		background: none;
 	}
