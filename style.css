@@ -361,9 +361,16 @@ body {
 
 @media (max-width: 1000px) {
 	body {
+		/*background: none;*/
+	}
+}
+
+@media (max-width: 799px) {
+	body {
 		background: none;
 	}
 }
+
 
 @media (max-width: 800px) {
 	#primary {
