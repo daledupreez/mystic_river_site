@@ -398,6 +398,7 @@ body {
 		background-position: top left;
 		background-size: 600px;
 		background-position-y: 100px;
+		background-position-x: -40px;
 	}
 	#primary {
 		margin-top: 0px;
