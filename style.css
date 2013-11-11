@@ -365,14 +365,14 @@ body {
 	}
 }
 
-@media (max-device-width: 767px) {
+@media (max-width: 800px) {
 	body {
 		background: none;
 	}
 }
 
 
-@media (max-device-width: 767px) {
+@media (max-width: 800px) {
 	#primary {
 		margin-top: 24px;
 		margin-bottom: 24px;
