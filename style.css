@@ -363,6 +363,13 @@ body {
 	body {
 		/*background: none;*/
 	}
+	/* Reduce header font size when screen gets narrower */
+	#access ul li.menu-item a {
+		font-size: 15px;
+	}
+	#access ul li.menu-item ul li.menu-item a {
+		font-size: 13px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -416,6 +423,13 @@ body {
 		margin-left: 15%;
 		margin-right: 34%;
 		width: 58.4%;
+	}
+	/* Reduce header font size when screen gets narrower */
+	#access ul li.menu-item a {
+		font-size: 15px;
+	}
+	#access ul li.menu-item ul li.menu-item a {
+		font-size: 13px;
 	}
 }
 
