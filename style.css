@@ -366,9 +366,11 @@ body {
 	/* Reduce header font size when screen gets narrower */
 	#access ul li.menu-item a {
 		font-size: 15px;
+		padding: 0px 0.8em;
 	}
 	#access ul li.menu-item ul li.menu-item a {
 		font-size: 13px;
+		padding: 10px 10px;
 	}
 }
 
@@ -427,9 +429,11 @@ body {
 	/* Reduce header font size when screen gets narrower */
 	#access ul li.menu-item a {
 		font-size: 15px;
+		padding: 0px 0.8em;
 	}
 	#access ul li.menu-item ul li.menu-item a {
 		font-size: 13px;
+		padding: 10px 10px;
 	}
 }
 
