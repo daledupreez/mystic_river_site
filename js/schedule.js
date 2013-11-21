@@ -33,9 +33,13 @@ schedule.fn.render = function schedule_fn_render()
 	}
 	else {
 		var html = [];
-		var colCount = 11;
+		var body = document.body;
+		var useNarrow = (body && (body.clientWidth < 800));
+		var colCount = useNarrow ? 9 : 11;
 		var resultColCount = 4;
 		var isOpen = false;
+		var venueSpan = (useNarrow ? '' : 'colspan="2"');
+		var resultSpan = 'colspan="4"';
 
 		var last = {
 			"season": null,
@@ -66,15 +70,18 @@ schedule.fn.render = function schedule_fn_render()
 				// Render headers for current season
 				// Make sure colCount and resultColCount are updated along with the columns
 				html.push('<tr class="mystic_schedule_table_header">');
-				html.push('<th>' + schedule.fn.getLoc('Date') + '</th>');
-				html.push('<th>' + schedule.fn.getLoc('Time') + '</th>');
+				if (useNarrow) {
+					html.push('<th>' + schedule.fn.getLoc('Date/Time') + '</th>');
+				}
+				else {
+					html.push('<th>' + schedule.fn.getLoc('Date') + '</th>');
+					html.push('<th>' + schedule.fn.getLoc('Time') + '</th>');
+				}
 				html.push('<th class="mystic_level">' + schedule.fn.getLoc('Team') + '</th>');
 				html.push('<th>' + schedule.fn.getLoc('Opposition') + '</th>');
-				html.push('<th colspan="2">' + schedule.fn.getLoc('Venue') + '</th>');
-				html.push('<th colspan="4" style="text-align: center;">' + schedule.fn.getLoc('Result') + '</th>');
-				/*html.push('<th>&nbsp;</th>');
-				html.push('<th>&nbsp;</th>');
-				html.push('<th>&nbsp;</th>');*/
+				
+				html.push('<th ' + venueSpan + '>' + schedule.fn.getLoc('Venue') + '</th>');
+				html.push('<th ' + resultSpan + ' style="text-align: center;">' + schedule.fn.getLoc('Result') + '</th>');
 				html.push('</tr>');
 			}
 			if ((match._month != last.month) || (match._year != last.year)) {
@@ -83,17 +90,24 @@ schedule.fn.render = function schedule_fn_render()
 				last.year = match._year;
 			}
 			html.push('<tr>');
-			var dateContents = '&nbsp;';
-			if (match._date != last.date) {
-				last.date = match._date;
-				dateContents = String(match.day_name).substring(0,3) + '&nbsp;' + match._day;
+			if (useNarrow) {
+				html.push(String(match.day_name).substring(0,3) + '&nbsp;' + match._day + ' ' + String(match._time).substring(0,5));
 			}
-			html.push('<td>' + dateContents + '</td>');
-			html.push('<td>' + String(match._time).substring(0,5) + '</td>');
+			else {
+				var dateContents = '&nbsp;';
+				if (match._date != last.date) {
+					last.date = match._date;
+					dateContents = String(match.day_name).substring(0,3) + '&nbsp;' + match._day;
+				}
+				html.push('<td>' + dateContents + '</td>');
+				html.push('<td>' + String(match._time).substring(0,5) + '</td>');
+			}
 			html.push('<td class="mystic_level">' + match.level + '</td>');
 			html.push('<td class="mystic_opposition">' + (match.tourney_name ? match.tourney_name : match.team) + (match.comment ? ' (' + match.comment + ')' : '') + '</td>');
 			html.push('<td>' + (1 == parseInt(match.is_home,10) ? 'H' : 'A') + '</td>');
-			html.push('<td>' + match.venue + '</td>');
+			if (!useNarrow) {
+				html.push('<td>' + match.venue + '</td>');
+			}
 			if ((match.our_score != null) && (match.their_score != null)) {
 				var ours = parseInt(match.our_score,10);
 				var theirs = parseInt(match.their_score,10);

@@ -11,6 +11,7 @@ article.mystic_schedule, article.hentry.mystic_schedule, article.hentry.mystic_s
 	background-image: -webkit-linear-gradient(right, #555555 0%, #333333 50%);
 	background-image: linear-gradient(to left, #555555 0%, #333333 50%);
 	box-shadow: 0 0 12px #000000;
+	overflow-x: auto;
 }
 article.mystic_schedule .entry-content {
 	padding: 0px;
