@@ -71,7 +71,7 @@ schedule.fn.render = function schedule_fn_render()
 				// Make sure colCount and resultColCount are updated along with the columns
 				html.push('<tr class="mystic_schedule_table_header">');
 				if (useNarrow) {
-					html.push('<th>' + schedule.fn.getLoc('Date/Time') + '</th>');
+					html.push('<th>' + schedule.fn.getLoc('When') + '</th>');
 				}
 				else {
 					html.push('<th>' + schedule.fn.getLoc('Date') + '</th>');
@@ -80,7 +80,7 @@ schedule.fn.render = function schedule_fn_render()
 				html.push('<th class="mystic_level">' + schedule.fn.getLoc('Team') + '</th>');
 				html.push('<th>' + schedule.fn.getLoc('Opposition') + '</th>');
 				
-				html.push('<th ' + venueSpan + '>' + schedule.fn.getLoc('Venue') + '</th>');
+				html.push('<th ' + venueSpan + '>' + (useNarrow ? '&nbsp;' : schedule.fn.getLoc('Venue')) + '</th>');
 				html.push('<th ' + resultSpan + ' style="text-align: center;">' + schedule.fn.getLoc('Result') + '</th>');
 				html.push('</tr>');
 			}
@@ -104,7 +104,7 @@ schedule.fn.render = function schedule_fn_render()
 			}
 			html.push('<td class="mystic_level">' + match.level + '</td>');
 			html.push('<td class="mystic_opposition">' + (match.tourney_name ? match.tourney_name : match.team) + (match.comment ? ' (' + match.comment + ')' : '') + '</td>');
-			html.push('<td>' + (1 == parseInt(match.is_home,10) ? 'H' : 'A') + '</td>');
+			html.push('<td ' + (useNarrow ? 'style="font-weight: bold;"' : '') + '>' + (1 == parseInt(match.is_home,10) ? 'H' : 'A') + '</td>');
 			if (!useNarrow) {
 				html.push('<td>' + match.venue + '</td>');
 			}
