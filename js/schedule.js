@@ -91,7 +91,7 @@ schedule.fn.render = function schedule_fn_render()
 			}
 			html.push('<tr>');
 			if (useNarrow) {
-				html.push(String(match.day_name).substring(0,3) + '&nbsp;' + match._day + ' ' + String(match._time).substring(0,5));
+				html.push('<td>' + String(match.day_name).substring(0,3) + '&nbsp;' + match._day + ' ' + String(match._time).substring(0,5) + '</td>');
 			}
 			else {
 				var dateContents = '&nbsp;';
