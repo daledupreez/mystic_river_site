@@ -130,3 +130,17 @@ table.mystic_schedule tr.mystic_season_row:hover {
 	border: 1px solid #666;
 	border-radius: 4px;
 }
+
+@media (max-width: 600px) {
+	.mystic_schedule tbody td,
+	.mystic_schedule th {
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	.mystic_result {
+		font-size: 1em;
+	}
+	.mystic_result.mystic_result_letter {
+		font-size: 1.2em;
+	}
+}
