@@ -143,4 +143,7 @@ table.mystic_schedule tr.mystic_season_row:hover {
 	.mystic_result.mystic_result_letter {
 		font-size: 1.2em;
 	}
+	#main #content {
+		margin: 0px 3%;
+	}
 }
