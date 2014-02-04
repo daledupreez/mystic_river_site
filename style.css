@@ -338,31 +338,38 @@ body.single-post article.post header.entry-header div.entry-meta {
 }
 
 body {
-	background-image: url('images/background_clean.jpg');
+	background-image: url('images/blue_stripe.png');
+	background-size: auto 52px;
+	padding: 0px;
+}
+#mystic_bg {
+	padding: 0px 2em;
+	background-image: url('images/lineout_foreground.png');
+	background-position: 2em 104px;
 	background-repeat: no-repeat;
-	background-position: top left;
-	background-size: 1000px auto;
+	background-size: 360px auto;
 }
 
 /* Media overrides */
 
-@media (max-width: 1300px) {
-	body {
-		background-size: 700px;
-		background-position-y: 50px;
+@media (max-width: 1500px) {
+	#mystic_bg {
+		background-position: 2em 208px;
 	}
 }
-@media (max-width: 1150px) {
+
+@media (max-width: 1200px) {
 	body {
-		background-size: 600px;
-		background-position-y: 100px;
+		background-size: auto 39px;
+	}
+	#mystic_bg {
+		background-size: 270px auto;
+		/* TODO */
+		background-position: 0px 200px;
 	}
 }
 
 @media (max-width: 1000px) {
-	body {
-		/*background: none;*/
-	}
 	/* Reduce header font size when screen gets narrower */
 	#access ul li.menu-item a {
 		font-size: 15px;
@@ -375,13 +382,10 @@ body {
 }
 
 @media (max-width: 800px) {
-	body {
+	/* Don't show image when it's too narrow */
+	#mystic_bg {
 		background: none;
 	}
-}
-
-
-@media (max-width: 800px) {
 	#primary {
 		margin-top: 24px;
 		margin-bottom: 24px;
@@ -401,13 +405,8 @@ body {
 
 /* iPad specific hacks */
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-	body {
-		background-image: url('images/background_clean.jpg');
-		background-repeat: no-repeat;
-		background-position: top left;
-		background-size: 600px;
-		background-position-y: 100px;
-		background-position-x: -40px;
+	#mystic_bg {
+		/*background-size: 600px;*/
 	}
 	#primary {
 		margin-top: 0px;
