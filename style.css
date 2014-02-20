@@ -339,32 +339,33 @@ body.single-post article.post header.entry-header div.entry-meta {
 
 body {
 	background-image: url('images/blue_stripe.png');
-	background-size: auto 52px;
 	padding: 0px;
 }
 #mystic_bg {
 	padding: 0px 2em;
 	background-image: url('images/lineout_foreground.png');
-	background-position: 2em 104px;
+	background-position: 0px 30px;
 	background-repeat: no-repeat;
-	background-size: 360px auto;
 }
 
 /* Media overrides */
 
 @media (max-width: 1500px) {
 	#mystic_bg {
-		background-position: 2em 208px;
+		background-position: 0px 170px;
 	}
 }
 
 @media (max-width: 1200px) {
-	body {
-		background-size: auto 39px;
-	}
 	#mystic_bg {
-		background-size: 270px auto;
-		background-position: 0px 200px;
+		background-size: 279px auto;
+		background-position: 0px 180px;
+	}
+}
+
+@media (max-width: 1100px) {
+	#mystic_bg {
+		background-size: 248px auto;
 	}
 }
 
@@ -377,6 +378,10 @@ body {
 	#access ul li.menu-item ul li.menu-item a {
 		font-size: 13px;
 		padding: 10px 10px;
+	}
+
+	#mystic_bg {
+		background-size: 186px auto;
 	}
 }
 
