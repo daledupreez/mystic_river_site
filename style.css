@@ -339,6 +339,7 @@ body.single-post article.post header.entry-header div.entry-meta {
 
 body {
 	background-image: url('images/blue_stripe.png');
+	background-size: auto 52px;
 	padding: 0px;
 }
 #mystic_bg {
