@@ -9,6 +9,8 @@ add_action('init','mystic_init');
 
 add_filter('widget_display_callback', 'mystic_filter_widget_display');
 
+add_filter('twentyeleven_header_image_width', 'mystic_header_image_width');
+
 function my_child_theme_setup() {
 	// Removes the filter that adds the "singular" class to the body element
 	// which centers the content and does not allow for a sidebar
@@ -34,6 +36,11 @@ if (window.jQuery) {
 }
 </script>
 <?php
+}
+
+function mystic_header_image_width($width)
+{
+	return 1100;
 }
 
 function mystic_filter_widget_display( $widget_instance )
