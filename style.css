@@ -356,7 +356,7 @@ body {
 	}
 }
 
-@media (max-width: 1200px), (max-height: 600px) {
+@media (max-width: 1200px), (max-height: 700px) {
 	#mystic_bg {
 		background-position: 0px 180px;
 		background-size: 248px auto;
