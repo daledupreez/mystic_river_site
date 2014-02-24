@@ -350,13 +350,25 @@ body {
 
 /* Media overrides */
 
+@media (min-width: 1800px) {
+	#mystic_bg {
+		background-position: 5% 0px;
+	}
+}
+
+@media (min-width: 2000px) {
+	#mystic_bg {
+		background-position: 10% 0px;
+	}
+}
+
 @media (max-width: 1500px) {
 	#mystic_bg {
 		background-position: 0px 170px;
 	}
 }
 
-@media (max-width: 1200px), (max-height: 700px) {
+@media (max-width: 1200px), (max-height: 800px) {
 	#mystic_bg {
 		background-size: 248px auto;
 	}
