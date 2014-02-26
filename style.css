@@ -378,6 +378,9 @@ body {
 }
 
 @media (max-width: 800px) {
+	body {
+		padding: 0px 1.2em;
+	}
 	/* Don't show image when it's too narrow */
 	#primary {
 		margin-top: 24px;
