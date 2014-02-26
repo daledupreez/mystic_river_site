@@ -342,42 +342,16 @@ body {
 }
 #mystic_bg {
 	padding: 0px 2em;
+}
+
+#primary {
 	background-image: url('images/lineout_foreground.png');
-	background-position: 0px 30px;
+	background-position: 0px 10px;
 	background-size: 279px auto;
 	background-repeat: no-repeat;
 }
-
-/* Media overrides */
-
-@media (min-width: 1800px) {
-	#mystic_bg {
-		background-position: 5% 0px;
-	}
-}
-
-@media (min-width: 2000px) {
-	#mystic_bg {
-		background-position: 10% 0px;
-	}
-}
-
-@media (max-width: 1500px) {
-	#mystic_bg {
-		background-position: 0px 170px;
-	}
-}
-
-@media (max-width: 1200px), (max-height: 800px) {
-	#mystic_bg {
-		background-size: 248px auto;
-	}
-}
-
-@media (max-width: 1200px) {
-	#mystic_bg {
-		background-position: 0px 180px;
-	}
+#content {
+	margin-left: 18%;
 }
 
 @media (max-width: 1000px) {
@@ -390,20 +364,14 @@ body {
 		font-size: 13px;
 		padding: 10px 10px;
 	}
-
-	#mystic_bg {
-		background-size: 186px auto;
-	}
 }
 
 @media (max-width: 800px) {
 	/* Don't show image when it's too narrow */
-	#mystic_bg {
-		background-image: none;
-	}
 	#primary {
 		margin-top: 24px;
 		margin-bottom: 24px;
+		background-image: none;
 	}
 	#main #secondary {
 		clear: both;
@@ -420,12 +388,10 @@ body {
 
 /* iPad specific hacks */
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-	#mystic_bg {
-		background-image: url('images/lineout_foreground.png');
-	}
 	#primary {
 		margin-top: 0px;
 		margin-bottom: 0px;
+		background-image: url('images/lineout_foreground.png');
 	}
 	#main #secondary {
 		float: right;
