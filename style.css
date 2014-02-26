@@ -407,6 +407,18 @@ body {
 	}
 }
 
+@media (max-width: 500px) {
+	#primary #content {
+		max-width: 80%;
+	}
+}
+
+@media (max-width: 350px) {
+	#primary #content {
+		max-width: 95%;
+	}
+}
+
 /* iPad specific hacks */
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 	#primary {
