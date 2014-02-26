@@ -29,7 +29,7 @@ p {
 	background: none;
 }
 #access {
-	background: #063a78;
+	background: #142f75;
 	border-bottom: 2px solid white;	
 	margin-bottom: 0px;
 	padding-top: 2px;
@@ -122,7 +122,7 @@ a.more-link {
     font-weight: bold;
     letter-spacing: normal;
     text-transform: none;
-    background-color: #063a78;
+    background-color: #142f75;
     border: 1px solid #CCC;
     border-right-color: #999;
     border-radius: 5px;
@@ -146,7 +146,7 @@ aside.widget_search {
 	text-transform: none;
 	letter-spacing: normal;
 	line-height: inherit;
-	background-color: #063a78;
+	background-color: #142f75;
 	border-top: 1px solid #999;
 	border-bottom: 1px solid #999;
 	/*cursor: pointer;*/
@@ -262,8 +262,6 @@ aside.widget_search {
 	display: none;
 }
 .entry-header .comments-link a {
-	/*background: url	("images/comment-bubble.png") no-repeat scroll 0 0 #CCC;
-	color: #999999;*/
 	margin-right: 10px;
 	top: 0.75em;
 }
@@ -273,7 +271,7 @@ aside.widget_search {
 }
 article.page header.entry-header,
 body.single-post article.post header.entry-header h1.entry-title {
-	background-color: #063a78;
+	background-color: #142f75;
 	/* Override padding from wrapper element */
 	margin: -5px -10px 0px;
 	padding: 5px 10px;
@@ -289,14 +287,11 @@ body.single-post article.post header.entry-header div.entry-meta {
 	color: white;
 	border-top: none;
 	background: none;
-	/*background-color: #063a78;*/
-	/*background-color: #002252;*/
 	padding-top: 1.5em;
 	padding-bottom: 1em;
 	line-height: 2em;
 }
 #site-generator {
-	/*background-color: #063a78;*/
 	background: none;
 	padding: 0px;
 	padding-top: 1em; 
@@ -458,7 +453,7 @@ body {
 	vertical-align: middle;
 	border-top: 1px solid white;
 	padding-top: 1.5em;
-	background-color: #063a78;
+	background-color: #142f75;
 }
 a.footer_link {
 	display: inline-block;
@@ -508,7 +503,7 @@ table.standings tr.mysticRow td {
 }
 
 #access ul ul a {
-	background: #063a78;
+	background: #142f75;
 	border-bottom: 1px dotted #ddd;
 	color: white;
 	font-weight: 800;
@@ -524,7 +519,7 @@ table.standings tr.mysticRow td {
 #access li:hover > a,
 #access ul ul :hover > a,
 #access a:focus {
-	background: #063a78;
+	background: #142f75;
 }
 #access li:hover > a,
 #access a:focus {
