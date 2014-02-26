@@ -244,12 +244,12 @@ aside.widget_search {
 	margin-left: 10px;
 }
 #primary {
-	/*background-color: #023272;*/
-	/*background-image: url("images/background.gif");
+	min-height: 650px;
+	background-image: url('images/lineout_foreground.png');
+	background-position: 0px 10px;
+	background-size: 279px auto;
 	background-repeat: no-repeat;
-	background-position: top left;*/
-	background: none;
-	min-height: 500px;
+	padding-bottom: 1.5em;
 }
 #secondary {
 	margin-right: 0%;
@@ -336,12 +336,6 @@ body {
 	padding: 0px 2em;
 }
 
-#primary {
-	background-image: url('images/lineout_foreground.png');
-	background-position: 0px 10px;
-	background-size: 279px auto;
-	background-repeat: no-repeat;
-}
 #mystic_header {
 	background: #001a3e;
 	background: linear-gradient(to left, rgba(0, 26, 62, 1) 550px, rgba(0, 26, 62, 0) 800px);
