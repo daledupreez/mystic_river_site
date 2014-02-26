@@ -353,6 +353,23 @@ body {
 #content {
 	margin-left: 18%;
 }
+#mystic_header {
+	background: #001a3e;
+	background: linear-gradient(to left, rgba(0, 26, 62, 1) 550px, rgba(0, 26, 62, 0) 800px);
+}
+#mystic_header, #mystic_header_players, #mystic_header_text {
+	height: 112px;
+}
+#mystic_header_players {
+	background-image: url('images/players.png');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+#mystic_header_text {
+	background-image: url('images/mystic_header_text.png');
+	background-repeat: no-repeat;
+	background-position: center left;
+}
 
 @media (max-width: 1000px) {
 	/* Reduce header font size when screen gets narrower */
@@ -383,6 +400,10 @@ body {
 	}
 	#nav-below {
 		border-width: 0px;
+	}
+	/* Make sure all header text is visible */
+	#mystic_header_text {
+		background-size: contain;
 	}
 }
 
