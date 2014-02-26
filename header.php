@@ -95,9 +95,11 @@
 					<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
 				</hgroup>
 
-				<a id="mystic_header" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<div id="mystic_header_players">
-						<div id="mystic_header_text">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<div id="mystic_header">
+						<div id="mystic_header_players">
+							<div id="mystic_header_text">
+							</div>
 						</div>
 					</div>
 				</a>
