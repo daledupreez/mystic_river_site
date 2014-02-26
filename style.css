@@ -228,7 +228,7 @@ aside.widget_search {
 	color: #FFF;
 }
 #content {
-	margin-left: 15%;
+	margin-left: 18%;
 	margin-top: 24px;
 	margin-bottom: 24px;
 }
@@ -338,9 +338,6 @@ body.single-post article.post header.entry-header div.entry-meta {
 body {
 	background-image: url('images/blue_stripe.png');
 	background-size: auto 52px;
-	padding: 0px;
-}
-#mystic_bg {
 	padding: 0px 2em;
 }
 
@@ -349,9 +346,6 @@ body {
 	background-position: 0px 10px;
 	background-size: 279px auto;
 	background-repeat: no-repeat;
-}
-#content {
-	margin-left: 18%;
 }
 #mystic_header {
 	background: #001a3e;
@@ -389,6 +383,9 @@ body {
 		margin-top: 24px;
 		margin-bottom: 24px;
 		background-image: none;
+	}
+	#primary #content {
+		margin: 0px;
 	}
 	#main #secondary {
 		clear: both;
