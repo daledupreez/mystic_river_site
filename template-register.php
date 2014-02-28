@@ -99,7 +99,7 @@ $fields = array(
 
 		<div id="primary">
 			<div id="content" class="team_data" role="main">
-				<article class="hentry">
+				<article class="hentry page">
 					<header class="entry-header">
 						<h1 class="entry-title">Register with Mystic River</h1>
 					</header>
