@@ -28,7 +28,7 @@
 	/*
 	 * Print the <title> tag based on what is being viewed.
 	 */
-	global $page, $paged;
+	global $page, $paged, $wp;
 
 	wp_title( '|', true, 'right' );
 
@@ -51,6 +51,29 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<!-- Open Graph items -->
+<meta name="og:title" content="<?php echo esc_attr( wp_title('|', true, 'right') . get_bloginfo('name') ); ?>" />
+<meta name="og:type" content="website" />
+<?php
+	$og_data = array(
+		'description' => "Boston Rugby at its finest. Established in 1974, Mystic River Rugby Club is Boston's PREMIER Division I rugby team and prides itself on the best rugby facilities in the Northeast.",
+		'image' => get_stylesheet_directory_uri() . '/images/mystic_logo_blue.png',
+		'url' => home_url( add_query_arg( array(), $wp->request ) )
+	);
+	if ( is_singular() ) {
+		the_post();
+		$og_data['description'] = get_the_excerpt();
+		$og_data['url'] = get_permalink();
+		if (has_post_thumbnail()) {
+			$og_data['image'] = wp_get_attachment_url( get_post_thumbnail_id() );
+		}
+		rewind_posts();
+	}
+	foreach ($og_data as $og_tag => $og_value) {
+		echo '<meta name="og:' . $og_tag . '" content="' . esc_attr( $og_value ) . '" />';
+	}
+?>
+
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
