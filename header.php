@@ -53,7 +53,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!-- Open Graph items -->
 <meta property="og:title" content="<?php echo esc_attr( wp_title('|', true, 'right') . get_bloginfo('name') ); ?>" />
-<meta property="og:type" content="website" />
+<!--<meta property="og:type" content="website" />-->
 <?php
 	$og_data = array(
 		'description' => "Boston Rugby at its finest. Established in 1974, Mystic River Rugby Club is Boston's PREMIER Division I rugby team and prides itself on the best rugby facilities in the Northeast.",
