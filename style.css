@@ -461,6 +461,10 @@ body {
 		margin-right: 34%;
 		width: 58.4%;
 	}
+	#main #content.team_data {
+		width: 82%;
+		margin-right: 0%;
+	}
 	/* Reduce header font size when screen gets narrower */
 	#access ul li.menu-item a {
 		font-size: 15px;
