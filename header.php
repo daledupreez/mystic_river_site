@@ -52,8 +52,8 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!-- Open Graph items -->
-<meta name="og:title" content="<?php echo esc_attr( wp_title('|', true, 'right') . get_bloginfo('name') ); ?>" />
-<meta name="og:type" content="website" />
+<meta property="og:title" content="<?php echo esc_attr( wp_title('|', true, 'right') . get_bloginfo('name') ); ?>" />
+<meta property="og:type" content="website" />
 <?php
 	$og_data = array(
 		'description' => "Boston Rugby at its finest. Established in 1974, Mystic River Rugby Club is Boston's PREMIER Division I rugby team and prides itself on the best rugby facilities in the Northeast.",
@@ -73,7 +73,7 @@
 		rewind_posts();
 	}
 	foreach ($og_data as $og_tag => $og_value) {
-		echo '<meta name="og:' . $og_tag . '" content="' . esc_attr( $og_value ) . '" />';
+		echo '<meta property="og:' . $og_tag . '" content="' . esc_attr( $og_value ) . '" />';
 	}
 ?>
 
