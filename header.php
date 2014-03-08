@@ -19,7 +19,7 @@
 <html id="ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> prefix="og: http://ogp.me/ns#">
 <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -62,7 +62,10 @@
 	);
 	if ( is_singular() ) {
 		the_post();
-		$og_data['description'] = get_the_excerpt();
+		$og_description = get_the_excerpt();
+		if ( !empty($og_description) ) {
+			$og_data['description'] = $og_description;
+		}
 		$og_data['url'] = get_permalink();
 		if (has_post_thumbnail()) {
 			$og_data['image'] = wp_get_attachment_url( get_post_thumbnail_id() );
