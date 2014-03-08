@@ -114,6 +114,8 @@ header .entry-meta .sep,
 a.more-link {
 	color: white;
 	font-weight: bold;
+	/* always push to new line */
+	display: block;
 }
 
 .page-title {
@@ -182,6 +184,12 @@ aside.widget_search {
 }
 .hentry, .no-results, .post {
 	padding: 10px;
+}
+img[class*="align"],
+img[class*="wp-image-"],
+#content .gallery .gallery-icon img {
+	border-color: #999;
+	border-radius: 5px;
 }
 /*Styles for areas that have grey background*/
 .hentry, .hentry:last-child, .no-results, .post, #secondary,
@@ -360,7 +368,7 @@ body {
 	}
 	#access ul li.menu-item ul li.menu-item a {
 		font-size: 13px;
-		padding: 10px 10px;
+		padding: 9px 10px;
 	}
 }
 
@@ -392,6 +400,15 @@ body {
 	#mystic_header_text {
 		background-size: contain;
 	}
+	/* Reduce header font size when screen gets narrower */
+	#access ul li.menu-item a {
+		font-size: 14px;
+		padding: 0px 0.7em;
+	}
+	#access ul li.menu-item ul li.menu-item a {
+		font-size: 12px;
+		padding: 8px 8px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -403,6 +420,24 @@ body {
 @media (max-width: 350px) {
 	#primary #content {
 		max-width: 95%;
+	}
+}
+
+@media (max-height: 900px) {
+	#primary {
+		background-size: 248px auto;
+	}
+}
+
+@media (max-height: 750px) {
+	#primary {
+		background-size: 217px auto;
+	}
+}
+
+@media (max-height: 600px) {
+	#primary {
+		background-size: 186px auto;
 	}
 }
 
@@ -464,7 +499,7 @@ img.footer_link_image {
 }
 
 #content.team_data {
-	width: 70%;
+	width: 82%;
 }
 
 table.standings tbody tr th,
@@ -731,7 +766,11 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	margin-bottom: 20px;
 }
 .mystic_register_button {
-	color: #333;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	background-color: #142f75;
+	padding: 5px 7px;
+	font-size: 1.15em;
 }
 .mystic_dialog_content {
 	color: #333;
