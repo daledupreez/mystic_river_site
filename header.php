@@ -80,6 +80,8 @@
 	if ($og_output_default_image) {
 		echo '<meta property="og:image" content="' . esc_attr( get_stylesheet_directory_uri() . '/images/mystic_logo_blue_1974.jpg' ) . '" />';
 	}
+	// always add alternate
+	echo '<meta property="og:image" content="' . esc_attr( get_stylesheet_directory_uri() . '/images/mystic_logo_blue_1974_alt.jpg' ) . '" />';
 ?>
 
 <!--[if lt IE 9]>
