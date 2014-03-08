@@ -55,9 +55,10 @@
 <meta property="og:title" content="<?php echo esc_attr( wp_title('|', true, 'right') . get_bloginfo('name') ); ?>" />
 <!--<meta property="og:type" content="website" />-->
 <?php
+	$og_output_default_image = false;
 	$og_data = array(
 		'description' => "Boston Rugby at its finest. Established in 1974, Mystic River Rugby Club is Boston's PREMIER Division I rugby team and prides itself on the best rugby facilities in the Northeast.",
-		'image' => get_stylesheet_directory_uri() . '/images/mystic_logo_blue.png',
+		'image' => get_stylesheet_directory_uri() . '/images/mystic_logo_blue_1974.jpg',
 		'url' => home_url( add_query_arg( array(), $wp->request ) )
 	);
 	if ( is_singular() ) {
@@ -69,11 +70,15 @@
 		$og_data['url'] = get_permalink();
 		if (has_post_thumbnail()) {
 			$og_data['image'] = wp_get_attachment_url( get_post_thumbnail_id() );
+			$og_output_default_image = true;
 		}
 		rewind_posts();
 	}
 	foreach ($og_data as $og_tag => $og_value) {
 		echo '<meta property="og:' . $og_tag . '" content="' . esc_attr( $og_value ) . '" />';
+	}
+	if ($og_output_default_image) {
+		echo '<meta property="og:image" content="' . esc_attr( get_stylesheet_directory_uri() . '/images/mystic_logo_blue_1974.jpg' ) . '" />';
 	}
 ?>
 
