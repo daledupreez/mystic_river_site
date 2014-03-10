@@ -381,6 +381,8 @@ body {
 		margin-top: 24px;
 		margin-bottom: 24px;
 		background-image: none;
+		/* Don't require minimum height without the background */
+		min-height: 20px;
 	}
 	#primary #content {
 		margin: 0px;
