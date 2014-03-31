@@ -481,7 +481,7 @@ body {
 /* End overridden styles */
 
 #footer_links {
-	min-height: 100px;
+	min-height: 120px;
 	text-align: center;
 	vertical-align: middle;
 	border-top: 1px solid white;
@@ -491,17 +491,21 @@ body {
 a.footer_link {
 	display: inline-block;
 	vertical-align: middle;
-	line-height: 80px;
+	line-height: 100px;
 }
 img.footer_link_image {
 	display: inline-block;
 	max-height: 80px;
 	vertical-align: middle;
-	margin-left: 15px;
-	margin-right: 15px;
+	margin-left: 7px;
+	margin-right: 7px;
 }
-#link_ruggers img {
-	width: 260px;
+#link_ruggers img,
+#link_coors img {
+	width: 250px;
+}
+#link_cha img.footer_link_image {
+	max-height: 100px;
 }
 
 #content.team_data {
