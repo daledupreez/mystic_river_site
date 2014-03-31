@@ -30,6 +30,9 @@
 					<a id="link_harp" class="footer_link" href="http://www.harpboston.com" target="_blank" alt="The Harp">
 						<img class="footer_link_image" src="<?php echo $imageDir; ?>harp_logo.png" />
 					</a>
+					<a id="link_cha" class="footer_link" href="http://www.challiance.org/Services/SportsMedicine.aspx" target="_blank" alt="CHA Sports Medicine">
+						<img class="footer_link_image" src="<?php echo $imageDir; ?>cha_sports_medicine_logo.png" />
+					</a>
 					<a id="link_usa_rugby" class="footer_link" href="http://www.usarugby.org" target="_blank" alt="USA Rugby" title="USA Rugby">
 						<img class="footer_link_image" src="<?php echo $imageDir; ?>usa_rugby_logo.png" />
 					</a>
