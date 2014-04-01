@@ -497,12 +497,15 @@ img.footer_link_image {
 	display: inline-block;
 	max-height: 80px;
 	vertical-align: middle;
-	margin-left: 7px;
-	margin-right: 7px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 #link_ruggers img,
 #link_coors img {
-	width: 230px;
+	width: 220px;
+}
+#link_llanllyr img {
+	width: 140px;
 }
 #link_cha img.footer_link_image {
 	max-height: 100px;
