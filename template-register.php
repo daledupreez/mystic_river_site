@@ -105,6 +105,9 @@ $fields = array(
 					</header>
 					<div class="entry-content">
 						<div id="mystic_alert_div" style="display: none;"></div>
+						<div>
+							<span><strong>NOTE: Youth and Rookie Rugby registration will be using a separate registration system. This sign-up is intended for people interested in getting information about Mystic River college and adult programs.</strong></span>
+						</div>
 						<form id="mystic_register_form" action="<?php echo esc_url(get_home_url()); ?>">
 <?php
 	echo '<div class="mystic_register_email_lists">';
