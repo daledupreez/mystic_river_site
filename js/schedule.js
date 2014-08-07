@@ -50,7 +50,7 @@ schedule.fn.render = function schedule_fn_render()
 
 		for (var i = 0; i < schedule.matchList.length; i++) {
 			var match = schedule.matchList[i];
-			var displayTime = match._time.subtring(0,5);
+			var displayTime = match._time.substring(0,5);
 			var colonPos = displayTime.indexOf(':');
 			var hours = (colonPos > 0) ? parseInt(displayTime.substring(0,colonPos),10) : 0;
 			if (isNaN(hours)) {
