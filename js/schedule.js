@@ -50,6 +50,19 @@ schedule.fn.render = function schedule_fn_render()
 
 		for (var i = 0; i < schedule.matchList.length; i++) {
 			var match = schedule.matchList[i];
+			var displayTime = match._time.subtring(0,5);
+			var colonPos = displayTime.indexOf(':');
+			var hours = (colonPos > 0) ? parseInt(displayTime.substring(0,colonPos),10) : 0;
+			if (isNaN(hours)) {
+				hours = 0;
+			}
+			var suffix = 'am';
+			if (hours >= 12) {
+				suffix = 'pm';
+				hours = hours - 12;
+			}
+			var minutes = (colonPos > 0) ? displayTime.substring(colonPos+1) : '00';
+			displayTime = hours + ':' + minutes + suffix;
 			if (match.season != last.season) {
 				if (isOpen) {
 					html.push('</table>');
@@ -91,7 +104,7 @@ schedule.fn.render = function schedule_fn_render()
 			}
 			html.push('<tr>');
 			if (useNarrow) {
-				html.push('<td>' + String(match.day_name).substring(0,3) + '&nbsp;' + match._day + ' ' + String(match._time).substring(0,5) + '</td>');
+				html.push('<td>' + String(match.day_name).substring(0,3) + '&nbsp;' + match._day + ' ' + displayTime + '</td>');
 			}
 			else {
 				var dateContents = '&nbsp;';
@@ -100,7 +113,7 @@ schedule.fn.render = function schedule_fn_render()
 					dateContents = String(match.day_name).substring(0,3) + '&nbsp;' + match._day;
 				}
 				html.push('<td>' + dateContents + '</td>');
-				html.push('<td>' + String(match._time).substring(0,5) + '</td>');
+				html.push('<td>' + displayTime + '</td>');
 			}
 			html.push('<td class="mystic_level">' + match.level + '</td>');
 			html.push('<td class="mystic_opposition">' + (match.tourney_name ? match.tourney_name : match.team) + (match.comment ? ' (' + match.comment + ')' : '') + '</td>');
