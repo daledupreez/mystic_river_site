@@ -115,7 +115,7 @@ schedule.fn.render = function schedule_fn_render()
 				html.push('<td>' + dateContents + '</td>');
 				html.push('<td>' + displayTime + '</td>');
 			}
-			html.push('<td class="mystic_level">' + match.level + '</td>');
+			html.push('<td class="mystic_level">' + match.level_name + '</td>');
 			html.push('<td class="mystic_opposition">' + (match.tourney_name ? match.tourney_name : match.team) + (match.comment ? ' (' + match.comment + ')' : '') + '</td>');
 			html.push('<td ' + (useNarrow ? 'style="font-weight: bold;"' : '') + '>' + (1 == parseInt(match.is_home,10) ? 'H' : 'A') + '</td>');
 			if (!useNarrow) {
