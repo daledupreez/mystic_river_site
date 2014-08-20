@@ -59,7 +59,9 @@ schedule.fn.render = function schedule_fn_render()
 			var suffix = 'am';
 			if (hours >= 12) {
 				suffix = 'pm';
-				hours = hours - 12;
+				if ((hours > 12) && (hours < 24)) {
+					hours = hours - 12;
+				}
 			}
 			var minutes = (colonPos > 0) ? displayTime.substring(colonPos+1) : '00';
 			displayTime = hours + ':' + minutes + suffix;
