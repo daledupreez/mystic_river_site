@@ -1,0 +1,149 @@
+/*
+Schedule CSS.
+*/
+
+article.mystic_schedule, article.hentry.mystic_schedule, article.hentry.mystic_schedule:last-child {
+	/*background-color: rgba(51, 51, 51, 1.0);*/
+	padding: 0px;
+	background-image: -moz-linear-gradient(right, #555555 0%, #333333 50%);
+	background-image: -o-linear-gradient(right, #555555 0%, #33333 50%);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #555555), color-stop(0.5, #333333));
+	background-image: -webkit-linear-gradient(right, #555555 0%, #333333 50%);
+	background-image: linear-gradient(to left, #555555 0%, #333333 50%);
+	box-shadow: 0 0 12px #000000;
+	overflow-x: auto;
+}
+article.mystic_schedule .entry-content {
+	padding: 0px;
+}
+
+
+table.mystic_schedule {
+	padding: 0px;
+	margin-bottom: 0px;
+	background-image: -moz-linear-gradient(right, #555555 0%, #333333 50%);
+	background-image: -o-linear-gradient(right, #555555 0%, #33333 50%);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(0, #555555), color-stop(0.5, #333333));
+	background-image: -webkit-linear-gradient(right, #555555 0%, #333333 50%);
+	background-image: linear-gradient(to left, #555555 0%, #333333 50%);
+	box-shadow: 0 0 12px #000000;
+}
+
+.mystic_schedule {
+	border-radius: 5px;
+}
+.mystic_schedule tbody td,
+.mystic_schedule th {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.mystic_schedule tbody td.mystic_result_ours {
+	padding-right: 0px;
+	text-align: right;
+}
+.mystic_schedule tbody td.mystic_result_theirs {
+	padding-left: 0px;
+	text-align: left;
+}
+.mystic_schedule tbody td.mystic_result_middle {
+	padding: 0px;
+}
+table.mystic_schedule tbody td {
+	border-top: 1px solid #666;
+	vertical-align: middle;
+	/* use pixels to keep larger text vertically centered */
+	line-height: 20px;
+}
+.mystic_schedule_table_header th {
+	background-color: #023272;
+	color: white;
+	font-weight: bold;
+}
+table.mystic_schedule tbody td.mystic_month_cell {
+	text-transform: uppercase;
+	background-color: #023272;
+	color: white;
+	font-weight: bold;
+	font-style: italic;
+	padding-left: 10px;
+}
+table.mystic_schedule tbody td.mystic_season_cell {
+	text-transform: uppercase;
+	background-color: #CCC;
+	color: #333;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-left: 10px;
+}
+table.mystic_schedule tbody td.mystic_season_cell,
+table.mystic_schedule tbody tr.mystic_season_row {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+table.mystic_schedule tr td:first-child {
+    border-left: 0 solid gray;
+}
+table.mystic_schedule tr:first-child th:first-child {
+    border-left: 0 solid gray;
+    border-top-left-radius: 5px;
+}
+table.mystic_schedule tr:first-child th:last-child {
+    border-top-right-radius: 5px;
+}
+table.mystic_schedule tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+table.mystic_schedule tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}
+table.mystic_schedule tr:hover {
+	background-color: #CCC;
+	color: #333333;
+}
+table.mystic_schedule tr.mystic_season_row:hover {
+/*
+	background-color: #002252;
+	color: #000;
+*/
+}
+
+.mystic_level {
+	text-align: center;
+}
+.mystic_home {
+	text-align: right;
+}
+.mystic_result {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.15em;
+}
+
+.mystic_schedule_filter {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.mystic_select {
+	padding: 3px;
+	border: 1px solid #666;
+	border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+	.mystic_schedule tbody td,
+	.mystic_schedule th {
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+	.mystic_result {
+		font-size: 1em;
+	}
+	.mystic_result.mystic_result_letter {
+		font-size: 1.2em;
+	}
+	#main #content {
+		margin: 0px 3%;
+	}
+}
