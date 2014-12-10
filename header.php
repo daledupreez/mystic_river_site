@@ -141,7 +141,7 @@
 					// Has the text been hidden?
 					if ( 'blank' == get_header_textcolor() ) :
 				?>
-					<div class="only-search<?php if ( $header_image ) : ?> with-image<?php endif; ?>">
+					<div class="only-search with-image">
 					<?php get_search_form(); ?>
 					</div>
 				<?php
