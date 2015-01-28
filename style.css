@@ -791,8 +791,12 @@ article .entry-title a:hover, article .entry-title a:focus, article .entry-title
 	border-radius: 3px;
 	border: 1px solid #CCC;
 	background-color: #142f75;
+	cursor: pointer;
 	padding: 5px 7px;
 	font-size: 1.15em;
+}
+input.mystic_register_button {
+	color: white;
 }
 .mystic_dialog_content {
 	color: #333;
