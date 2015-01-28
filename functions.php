@@ -23,8 +23,8 @@ function my_child_theme_setup() {
 }
 
 function mystic_init() {
-	wp_enqueue_script('jquery');
-	wp_enqueue_script('mystic_js', get_stylesheet_directory_uri() . '/js/mystic.js', array('jquery'));
+	wp_enqueue_script('jquery-core');
+	wp_enqueue_script('mystic_js', get_stylesheet_directory_uri() . '/js/mystic.js', array('jquery-core'));
 	add_action('wp_footer','mystic_onload_script');
 }
 
