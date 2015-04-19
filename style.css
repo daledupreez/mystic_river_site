@@ -938,6 +938,12 @@ input.mystic_register_button {
 .entry-content .woocommerce table.shop_table,
 .entry-content .woocommerce table.shop_table td {
 	border-color: rgba(255,255,255,0.2);
+	line-height: 2.6em;
+}
+
+.entry-content .woocommerce table.shop_table th.product-thumbnail,
+.entry-content .woocommerce table.shop_table td.product-thumbnail {
+	display: none;
 }
 
 .entry-content .cart_totals th {
