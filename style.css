@@ -951,8 +951,9 @@ input.mystic_register_button {
 }
 
 .woocommerce-checkout #payment,
-.woocommerce-checkout #payment a {
-	color: #515151;
+.woocommerce-checkout #payment a ,
+.entry-content .woocommerce-checkout #payment div.payment_box {
+	color: #444;
 }
 
 .woocommerce ul.payment_methods {
