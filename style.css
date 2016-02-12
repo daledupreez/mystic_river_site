@@ -383,6 +383,13 @@ body {
 	}
 }
 
+/* Ensure that we are tall enough to compensate for taller right sidebar */
+@media (min-width: 801px) {
+	.right-sidebar #primary {
+		min-height: 820px;
+	}
+}
+
 @media (max-width: 800px) {
 	body {
 		padding: 0px 1.2em;
