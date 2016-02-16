@@ -36,11 +36,11 @@
 					<a id="link_usa_rugby" class="footer_link" href="http://www.usarugby.org" target="_blank" alt="USA Rugby" title="USA Rugby">
 						<img class="footer_link_image" src="<?php echo $imageDir; ?>usa_rugby_logo.png" />
 					</a>
-					<a id="link_llanllyr" class="footer_link" href="http://www.llanllyrwater.com/" target="_blank" alt="Llanllyr Source Water">
-						<img class="footer_link_image" src="<?php echo $imageDir; ?>llanllyr_source_logo.png" />
+					<a id="link_cwm" class="footer_link" href="http://www.cwmofnewengland.com/" target="_blank" alt="Concord Wealth Management">
+						<img class="footer_link_image" src="<?php echo $imageDir; ?>cwm_logo.png" />
 					</a>
-					<a id="link_ruggers" class="footer_link" href="http://www.ruggers.com/" target="_blank" alt="Ruggers">
-						<img class="footer_link_image" src="<?php echo $imageDir; ?>ruggers_logo.png" />
+					<a id="link_jameson" class="footer_link" href="https://www.jamesonwhiskey.com/us/" target="_blank" alt="Jameson Irish Whiskey">
+						<img class="footer_link_image" src="<?php echo $imageDir; ?>jameson_logo.png" />
 					</a>
 				</div>
 

@@ -518,15 +518,20 @@ img.footer_link_image {
 	margin-left: 10px;
 	margin-right: 10px;
 }
-#link_ruggers img,
 #link_coors img {
 	width: 210px;
 }
-#link_llanllyr img {
-	width: 140px;
+#link_cwm img {
+	width: 180px;
 }
 #link_harp img {
 	width: 150px;
+}
+#link_jameson img {
+	background-color: white;
+	max-height: 70px;
+	padding: 5px;
+
 }
 #link_cha img.footer_link_image {
 	max-height: 100px;
