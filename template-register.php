@@ -106,7 +106,7 @@ $fields = array(
 					<div class="entry-content">
 						<div id="mystic_alert_div" style="display: none;"></div>
 						<div>
-							<span style="font-size: 1.2em;"><strong>NOTE: Youth and Rookie Rugby registration will be using TeamSnap for summer 2015. This sign-up is intended for people interested in getting information about Mystic River college and adult programs.</strong></span>
+							<span style="font-size: 1.2em;"><strong>NOTE: Youth and Rookie Rugby registration will be using TeamSnap for summer 2016. This sign-up is intended for people interested in getting information about Mystic River college and adult programs.</strong></span>
 						</div>
 						<form id="mystic_register_form" action="<?php echo esc_url(get_home_url()); ?>">
 <?php
