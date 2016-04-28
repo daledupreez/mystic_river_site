@@ -533,6 +533,18 @@ img.footer_link_image {
 #link_cha img.footer_link_image {
 	max-height: 100px;
 }
+/* Hide bar/alcohol sponsors on youth pages 
+	page-id-105 => /youth/
+	page-id-102 => /u19/
+*/
+body.page-id-102 #footer_links a#link_coors,
+body.page-id-102 #footer_links a#link_harp,
+body.page-id-102 #footer_links a#link_jameson,
+body.page-id-105 #footer_links a#link_coors,
+body.page-id-105 #footer_links a#link_harp,
+body.page-id-105 #footer_links a#link_jameson {
+	display: none;
+}
 
 #content.team_data {
 	width: 82%;
